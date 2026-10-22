@@ -1,0 +1,149 @@
+{
+  "configuracion": {
+    "umbral_minimo": 1
+  },
+  "datos_institucionales": {
+    "horario": "lunes a viernes, de 9:00 a 18:00",
+    "ubicacion": "Edificio de Servicios Estudiantiles, planta baja",
+    "linea_ayuda": "línea de contacto 722 276 7190"
+  },
+  "entidades": {
+    "tema": {
+      "estres_academico": ["estres", "estresado", "estresada", "agobiado", "agobiada", "saturado", "saturada", "presion", "tareas", "entregas", "trabajos", "carga", "abrumado", "abrumada"],
+      "ansiedad_examenes": ["ansiedad", "ansioso", "ansiosa", "panico", "nervios", "nervioso", "nerviosa", "examen", "examenes", "evaluacion", "exposicion"],
+      "sueno": ["dormir", "duermo", "dormido", "sueno", "insomnio", "desvelo", "desvelado", "desvelada", "despierto", "despierta", "descansar", "descanso"],
+      "organizacion_tiempo": ["tiempo", "organizar", "organizacion", "planear", "planeacion", "prioridades", "pendientes", "agenda", "procrastinar", "estudiar"],
+      "tecnica_respiracion": ["respirar", "respiracion", "relajar", "relajacion", "calmar", "tranquilizar", "tecnica", "ejercicio"],
+      "solicitar_cita": ["cita", "agendar", "psicologo", "psicologa", "terapia", "orientador", "orientadora", "orientacion", "consulta", "profesional"]
+    }
+  },
+  "fallback": [
+    "No estoy seguro de haber entendido. ¿Podrías contármelo de otra forma? Puedo ayudarte con estrés académico, ansiedad ante exámenes, sueño, organización del tiempo, técnicas de respiración y con cómo solicitar una cita de orientación."
+  ],
+  "intenciones": [
+    {
+      "nombre": "crisis",
+      "prioridad": 1,
+      "palabras_clave": ["suicidio", "suicidarme", "morir", "morirme", "matarme", "autolesion", "lastimarme"],
+      "patrones": [
+        "no quiero seguir",
+        "ya no quiero vivir",
+        "ya no puedo mas",
+        "hacerme dano",
+        "quitarme la vida",
+        "quiero desaparecer",
+        "no vale la pena vivir",
+        "acabar con todo"
+      ],
+      "respuestas": [
+        "Lamento mucho que estés pasando por esto, y me alegra que lo hayas escrito. No tienes que enfrentarlo solo. Por favor, habla ahora mismo con alguien de confianza que pueda acompañarte. También puedes comunicarte con la {linea_ayuda}. Si sientes que corres peligro inmediato, marca al {emergencias}. Tu bienestar importa más que cualquier trabajo o examen."
+      ]
+    },
+    {
+      "nombre": "fuera_de_alcance",
+      "prioridad": 2,
+      "palabras_clave": ["diagnostico", "diagnosticar", "depresion", "deprimido", "trastorno", "bipolar", "pastilla", "pastillas", "medicamento", "medicamentos", "medicina", "receta", "recetar", "antidepresivo", "dosis"],
+      "patrones": [],
+      "respuestas": [
+        "Entiendo que quieras una respuesta clara, pero no puedo emitir diagnósticos ni recomendar medicamentos; eso solo lo puede hacer un profesional de la salud. Lo que sí puedo hacer es explicarte cómo solicitar una cita de orientación. ¿Te gustaría saber cómo?"
+      ]
+    },
+    {
+      "nombre": "estres_academico",
+      "prioridad": 3,
+      "palabras_clave": ["estres", "estresado", "estresada", "estresante", "agobiado", "agobiada", "saturado", "saturada", "presion", "tareas", "entregas", "trabajos", "carga", "abrumado", "abrumada"],
+      "patrones": ["no doy abasto"],
+      "respuestas": [
+        "Se escucha que llevas mucha carga, y es comprensible sentirse así en momentos de muchas entregas. Una forma de aligerarla es anotar todo lo pendiente y dividirlo en partes pequeñas. Si quieres, te ayudo con la organización del tiempo o te explico cómo pedir una cita de orientación.",
+        "Sentir estrés por la escuela es muy frecuente y no significa que estés fallando. Puede ayudarte empezar por lo más próximo a vencer y dejar lo demás para después. ¿Quieres que te dé algunas ideas para organizar tu tiempo?"
+      ]
+    },
+    {
+      "nombre": "ansiedad_examenes",
+      "prioridad": 3,
+      "palabras_clave": ["ansiedad", "ansioso", "ansiosa", "panico", "nervios", "nervioso", "nerviosa", "examen", "examenes", "evaluacion", "exposicion", "presentar"],
+      "patrones": ["me bloqueo"],
+      "respuestas": [
+        "Sentir tensión antes de un examen es muy común y suele disminuir con preparación y descanso. Puedes repasar en sesiones cortas distribuidas en varios días en lugar de una sola larga, y dormir bien la noche anterior. Si quieres, te enseño un ejercicio de respiración para calmarte antes de presentar."
+      ]
+    },
+    {
+      "nombre": "sueno",
+      "prioridad": 3,
+      "palabras_clave": ["dormir", "duermo", "dormido", "sueno", "insomnio", "desvelo", "desvelado", "desvelada", "despierto", "despierta", "descansar", "descanso"],
+      "patrones": ["no puedo dormir"],
+      "respuestas": [
+        "Dormir mal afecta el ánimo y la concentración. Algunas medidas que suelen ayudar son acostarte y levantarte a horas parecidas cada día, evitar las pantallas durante la hora previa a dormir y reducir la cafeína por la tarde. Si el problema continúa varias semanas, conviene que lo comentes con un profesional; puedo explicarte cómo solicitar una cita."
+      ]
+    },
+    {
+      "nombre": "tecnica_respiracion",
+      "prioridad": 3,
+      "palabras_clave": ["respirar", "respiracion", "relajar", "relajarme", "relajacion", "calmar", "calmarme", "tranquilizar", "tranquilizarme", "tecnica", "ejercicio"],
+      "patrones": [],
+      "respuestas": [
+        "Prueba este ejercicio de respiración lenta: 1) Siéntate cómodo y apoya la espalda. 2) Inhala por la nariz contando hasta cuatro. 3) Sostén el aire contando hasta cuatro. 4) Exhala despacio por la boca contando hasta seis. Repite el ciclo cinco veces. Si te hace sentir mareo, vuelve a respirar con normalidad."
+      ]
+    },
+    {
+      "nombre": "organizacion_tiempo",
+      "prioridad": 3,
+      "palabras_clave": ["tiempo", "organizar", "organizo", "organizacion", "planear", "planeacion", "prioridades", "pendientes", "alcanza", "agenda", "procrastinar", "procrastino", "estudiar"],
+      "patrones": ["no me alcanza"],
+      "respuestas": [
+        "Un método sencillo es ordenar tus pendientes por fecha de entrega y trabajar en bloques de 25 minutos con una pausa corta de cinco entre cada uno. Empieza por la tarea más próxima a vencer y deja anotado lo demás para no tenerlo todo en la cabeza. Si lo necesitas, puedo darte también un ejercicio de respiración para las pausas."
+      ]
+    },
+    {
+      "nombre": "solicitar_cita",
+      "prioridad": 3,
+      "palabras_clave": ["cita", "agendar", "psicologo", "psicologa", "terapia", "orientador", "orientadora", "orientacion", "consulta", "hablar", "profesional"],
+      "patrones": [
+        "quiero hablar con",
+        "a donde me comunico",
+        "a quien llamo",
+        "como contacto al servicio",
+        "como puedo contactar"
+      ],
+      "respuestas": [
+        "Para solicitar una cita de orientación, acude al servicio en {ubicacion} dentro del horario de atención ({horario}) o pide el registro a través de tu tutor. Se te pedirá tu nombre, tu carrera y una breve descripción de lo que te gustaría tratar. La atención es confidencial."
+      ]
+    },
+    {
+      "nombre": "horarios_ubicacion",
+      "prioridad": 3,
+      "palabras_clave": ["hora", "horas", "horario", "horarios", "atienden", "atencion", "abren", "abierto", "donde", "ubicacion", "direccion", "edificio", "llegar"],
+      "patrones": ["a que hora"],
+      "respuestas": [
+        "El servicio de orientación atiende de {horario}. Se encuentra en el {ubicacion}. Con la {linea_ayuda}"
+      ]
+    },
+    {
+      "nombre": "ayuda_capacidades",
+      "prioridad": 4,
+      "palabras_clave": ["ayuda", "ayudas", "ayudar", "puedes", "funcionas", "funciona", "eres", "quien", "temas", "opciones"],
+      "patrones": ["que puedes hacer", "que haces"],
+      "respuestas": [
+        "Puedo orientarte sobre estrés académico, ansiedad ante exámenes, problemas de sueño, organización del tiempo y técnicas de respiración, y explicarte cómo solicitar una cita de orientación y en qué horario se atiende. No puedo diagnosticar ni recomendar medicamentos. ¿Sobre qué te gustaría hablar?"
+      ]
+    },
+    {
+      "nombre": "saludo",
+      "prioridad": 4,
+      "palabras_clave": ["hola", "buenas", "buenos", "saludos", "hey"],
+      "patrones": [],
+      "respuestas": [
+        "Hola, soy Brújula, un asistente de orientación sobre bienestar emocional para estudiantes. No sustituyo a un profesional, pero puedo orientarte y decirte a dónde acudir. Puedes contarme si tienes estrés, ansiedad por exámenes, problemas de sueño o dudas sobre cómo pedir una cita. ¿En qué te puedo ayudar?"
+      ]
+    },
+    {
+      "nombre": "despedida",
+      "prioridad": 4,
+      "palabras_clave": ["adios", "gracias", "chao", "bye", "hasta", "luego", "despido"],
+      "patrones": ["nos vemos"],
+      "respuestas": [
+        "Me alegra haber podido ayudarte. Puedes volver cuando quieras, y recuerda que el servicio de orientación atiende de {horario}. Cuídate mucho."
+      ]
+    }
+  ]
+}
