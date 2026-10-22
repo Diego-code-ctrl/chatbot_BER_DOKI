@@ -5,7 +5,8 @@
   "datos_institucionales": {
     "horario": "lunes a viernes, de 9:00 a 18:00",
     "ubicacion": "Edificio de Servicios Estudiantiles, planta baja",
-    "linea_ayuda": "línea de contacto 722 276 7190"
+    "linea_ayuda": "línea de contacto 722 276 7190",
+    "emergencias": "911"
   },
   "entidades": {
     "tema": {
@@ -121,8 +122,8 @@
     {
       "nombre": "ayuda_capacidades",
       "prioridad": 4,
-      "palabras_clave": ["ayuda", "ayudas", "ayudar", "puedes", "funcionas", "funciona", "eres", "quien", "temas", "opciones"],
-      "patrones": ["que puedes hacer", "que haces"],
+      "palabras_clave": ["ayuda", "ayudas", "ayudar", "puedes", "funcionas", "funciona", "eres", "temas", "opciones"],
+      "patrones": ["que puedes hacer", "que haces", "quien eres"],
       "respuestas": [
         "Puedo orientarte sobre estrés académico, ansiedad ante exámenes, problemas de sueño, organización del tiempo y técnicas de respiración, y explicarte cómo solicitar una cita de orientación y en qué horario se atiende. No puedo diagnosticar ni recomendar medicamentos. ¿Sobre qué te gustaría hablar?"
       ]

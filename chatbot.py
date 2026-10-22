@@ -16,7 +16,7 @@ with ruta_reglas.open(encoding='utf-8') as archivo:
 stemmer = SnowballStemmer('spanish')
 
 # Verifica que el texto sea válido, no sea nulo o esté vacío
-def __texto_valido(texto: str) -> bool:
+def __texto_valido(texto: str | None) -> bool:
     return texto is not None and bool(re.search(r"\S", texto))
 
 def normalizar_texto(texto: str | None) -> str:
@@ -25,7 +25,7 @@ def normalizar_texto(texto: str | None) -> str:
     o inlcuso espacios duplicados, proceso antes de tokenizar
     """
     if not __texto_valido(texto):
-        raise ValueError('No se pudo normalizar el texto porque el texto está vacío')
+        return ''
     
     texto = texto.lower().replace('ñ', '\0')
     texto = unicodedata.normalize('NFD', texto)
@@ -45,6 +45,9 @@ def normalizar_texto(texto: str | None) -> str:
 
 def tokenizar_y_stem(texto: str | None) -> tuple[list[str], list[str]]:
     texto_normalizado = normalizar_texto(texto)
+    if not texto_normalizado:
+        return [], []
+
     tokens = nltk.word_tokenize(texto_normalizado, language='spanish')
     stems = [stemmer.stem(token) for token in tokens]
 
