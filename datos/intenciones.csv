@@ -1,0 +1,411 @@
+texto,intencion
+hola,saludo
+"hola, buenas tardes",saludo
+buenos días,saludo
+buenas noches,saludo
+"qué onda, ¿hay alguien?",saludo
+hey,saludo
+holaaa,saludo
+buen día,saludo
+saludos,saludo
+"hola, ¿cómo estás?",saludo
+qué tal,saludo
+hola buenas,saludo
+"ey, hola",saludo
+"buenas, ¿me puedes atender?",saludo
+"hola, necesito platicar con alguien",saludo
+hola dokita,saludo
+"buenas tardes, ¿estás ahí?",saludo
+hello,saludo
+qué hubo,saludo
+buen inicio de día,saludo
+hola doki,saludo
+"hola, ¿qué tal todo?",saludo
+muy buenas,saludo
+hola hola,saludo
+"buenos días, ¿cómo amaneces?",saludo
+wenas,saludo
+"hey, ¿hay alguien por aquí?",saludo
+"hola, ¿puedo escribirte?",saludo
+buenas tardes a todos,saludo
+"hola, vengo a ver qué tal",saludo
+"gracias, eso era todo",despedida
+"me voy, hasta luego",despedida
+"ok, muchas gracias, bye",despedida
+adiós,despedida
+hasta pronto,despedida
+chao,despedida
+nos vemos,despedida
+gracias por todo,despedida
+"eso es todo por hoy, gracias",despedida
+ya me tengo que ir,despedida
+bye,despedida
+"muchas gracias, que tengas buen día",despedida
+"listo, gracias",despedida
+"me despido, gracias por la ayuda",despedida
+hasta mañana,despedida
+"ok gracias, ya con eso estoy bien",despedida
+ahí nos vemos,despedida
+"cuídate, adiós",despedida
+"gracias, me sirvió mucho",despedida
+"ya no necesito nada más, gracias",despedida
+"bueno, me retiro",despedida
+"gracias, hasta la próxima",despedida
+"ok, chao",despedida
+"perfecto, gracias, es todo",despedida
+"sale, gracias, nos vemos",despedida
+"me voy a dormir, gracias por escucharme",despedida
+"terminé, muchas gracias",despedida
+hasta luego doki,despedida
+"gracias, que estés bien",despedida
+"es todo, adiós",despedida
+¿qué puedes hacer por mí?,ayuda_capacidades
+no sé para qué sirves,ayuda_capacidades
+¿de qué temas me puedes hablar?,ayuda_capacidades
+¿quién eres?,ayuda_capacidades
+¿qué haces?,ayuda_capacidades
+¿en qué me puedes ayudar?,ayuda_capacidades
+¿cómo funcionas?,ayuda_capacidades
+dime qué opciones tengo,ayuda_capacidades
+¿para qué eres bueno?,ayuda_capacidades
+¿qué sabes hacer?,ayuda_capacidades
+¿eres una persona o un robot?,ayuda_capacidades
+no entiendo qué ofreces,ayuda_capacidades
+¿qué temas manejas?,ayuda_capacidades
+explícame cómo me puedes ayudar,ayuda_capacidades
+¿cuáles son tus funciones?,ayuda_capacidades
+¿con qué cosas me puedes apoyar?,ayuda_capacidades
+¿sirves para algo?,ayuda_capacidades
+quiero saber qué haces,ayuda_capacidades
+¿me puedes decir de qué trata este servicio?,ayuda_capacidades
+¿qué tipo de ayuda das?,ayuda_capacidades
+¿qué me puedes ofrecer?,ayuda_capacidades
+no sé cómo usarte,ayuda_capacidades
+¿cómo me puedes ayudar con la escuela?,ayuda_capacidades
+¿cuál es tu trabajo?,ayuda_capacidades
+¿de qué cosas puedo hablar contigo?,ayuda_capacidades
+cuéntame qué eres,ayuda_capacidades
+¿eres un psicólogo?,ayuda_capacidades
+"oye, ¿y tú qué haces exactamente?",ayuda_capacidades
+¿qué puedo preguntarte?,ayuda_capacidades
+¿hasta dónde me puedes ayudar?,ayuda_capacidades
+tengo cuatro entregas para el viernes y no sé por dónde empezar,estres_academico
+siento mucha presión con la escuela,estres_academico
+estoy agobiado con tanta tarea,estres_academico
+estoy muy estresado,estres_academico
+ya no doy abasto con los trabajos,estres_academico
+la carga de la escuela me está rebasando,estres_academico
+me siento saturada de pendientes,estres_academico
+todos los profesores dejaron proyecto al mismo tiempo,estres_academico
+siento que me ahogo con tantas materias,estres_academico
+estoy abrumado con la universidad,estres_academico
+no puedo con tanta tarea,estres_academico
+este semestre me está quedando grande,estres_academico
+tengo mucho estrés por la escuela,estres_academico
+me siento presionado por mis calificaciones,estres_academico
+las entregas me tienen al límite,estres_academico
+estoy harta de tanto trabajo escolar,estres_academico
+me siento sobrepasado con los proyectos,estres_academico
+la escuela me tiene muy estresada,estres_academico
+siento que no avanzo con tantas tareas,estres_academico
+tanta presión académica me agota,estres_academico
+ya no aguanto tantas entregas,estres_academico
+estoy rebasado de trabajo,estres_academico
+me siento agobiada por las clases,estres_academico
+tengo demasiadas cosas que entregar,estres_academico
+me estoy estresando por la tesis,estres_academico
+siento mucha presión de mis papás por las notas,estres_academico
+estoy cansado de tanto estudiar y entregar,estres_academico
+no me da la vida con tanta carga,estres_academico
+todo se me junta en la escuela y me estreso,estres_academico
+la universidad me está consumiendo,estres_academico
+ando muy estresado con los trabajos finales,estres_academico
+siento que estoy a punto de reventar por la escuela,estres_academico
+estoy muy tensa por tantas tareas,estres_academico
+me agobian los proyectos,estres_academico
+me pesa mucho la escuela,estres_academico
+me pongo nervioso en cuanto veo el examen,ansiedad_examenes
+mañana presento y siento que me voy a bloquear,ansiedad_examenes
+los exámenes me dan pánico,ansiedad_examenes
+me bloqueo en los exámenes,ansiedad_examenes
+siento ansiedad antes de evaluar,ansiedad_examenes
+tengo exposición mañana y estoy temblando,ansiedad_examenes
+me sudan las manos cuando me dan el examen,ansiedad_examenes
+me da miedo reprobar el examen final,ansiedad_examenes
+se me olvida todo cuando empiezo a contestar,ansiedad_examenes
+tengo mucha ansiedad por el examen de mañana,ansiedad_examenes
+me da pánico hablar frente al grupo,ansiedad_examenes
+antes de cada examen me dan náuseas,ansiedad_examenes
+me pongo muy nerviosa cuando voy a presentar,ansiedad_examenes
+se me va la mente en blanco en las evaluaciones,ansiedad_examenes
+no puedo calmarme antes de un examen,ansiedad_examenes
+tengo el examen de cálculo y estoy aterrado,ansiedad_examenes
+siento que el corazón se me sale antes de exponer,ansiedad_examenes
+me estreso demasiado antes de presentar mi proyecto,ansiedad_examenes
+cada vez que hay examen me da ansiedad,ansiedad_examenes
+me tiemblan las piernas antes de la exposición,ansiedad_examenes
+me da mucho miedo el examen oral,ansiedad_examenes
+siento un nudo en el estómago antes de las pruebas,ansiedad_examenes
+cuando me siento a hacer el examen me quedo paralizado,ansiedad_examenes
+estoy muy nerviosa por la evaluación de mañana,ansiedad_examenes
+me da pavor equivocarme en la presentación,ansiedad_examenes
+los nervios me traicionan en los exámenes,ansiedad_examenes
+siento que voy a reprobar por los nervios,ansiedad_examenes
+tengo ataques de nervios antes de presentar,ansiedad_examenes
+la semana de exámenes me pone muy ansioso,ansiedad_examenes
+me paralizo cuando tengo que exponer,ansiedad_examenes
+se me cierra la garganta antes de una exposición,ansiedad_examenes
+me da angustia solo de pensar en el examen,ansiedad_examenes
+estudio mucho pero me bloqueo al presentar,ansiedad_examenes
+el examen de mañana me tiene sin comer de nervios,ansiedad_examenes
+temo quedarme en blanco en la defensa,ansiedad_examenes
+llevo una semana durmiendo muy poco,sueno
+me desvelo estudiando y amanezco agotado,sueno
+no logro conciliar el sueño,sueno
+no puedo dormir,sueno
+tengo insomnio,sueno
+me despierto a media noche y ya no puedo volver a dormir,sueno
+duermo solo tres horas,sueno
+me acuesto y doy vueltas toda la noche,sueno
+estoy muy cansada porque no descanso bien,sueno
+me quedo despierto hasta las cuatro de la mañana,sueno
+no he dormido bien en días,sueno
+mi sueño está hecho un desastre,sueno
+me desvelo con el celular y no puedo dormir,sueno
+amanezco sin energía por dormir mal,sueno
+a veces no duermo nada por pensar en la escuela,sueno
+tengo problemas para dormir,sueno
+me cuesta mucho quedarme dormida,sueno
+tengo pesadillas y me despierto cansado,sueno
+no duermo desde hace varios días,sueno
+me levanto agotada aunque duerma ocho horas,sueno
+mis desvelos me están afectando,sueno
+me la paso en vela por las noches,sueno
+ya ni sé a qué hora duermo,sueno
+por más que intento no me da sueño,sueno
+en las noches mi mente no para y no duermo,sueno
+me duermo en clase porque no descanso,sueno
+necesito dormir mejor,sueno
+siempre tengo sueño durante el día,sueno
+cada noche tardo horas en dormirme,sueno
+duermo muy mal desde que empezó el semestre,sueno
+enséñame algo para relajarme,tecnica_respiracion
+¿hay algún ejercicio para calmar los nervios?,tecnica_respiracion
+quiero respirar mejor cuando me estreso,tecnica_respiracion
+dime una técnica de respiración,tecnica_respiracion
+necesito relajarme ahorita,tecnica_respiracion
+¿cómo puedo calmarme?,tecnica_respiracion
+quiero hacer un ejercicio para tranquilizarme,tecnica_respiracion
+ayúdame a respirar para controlar los nervios,tecnica_respiracion
+¿conoces técnicas de relajación?,tecnica_respiracion
+me urge calmarme,tecnica_respiracion
+guíame con un ejercicio de respiración,tecnica_respiracion
+quiero aprender a relajarme,tecnica_respiracion
+¿cómo me tranquilizo cuando me altero?,tecnica_respiracion
+dame un ejercicio rápido para bajar la tensión,tecnica_respiracion
+necesito algo para respirar más tranquilo,tecnica_respiracion
+¿me puedes enseñar a respirar profundo?,tecnica_respiracion
+quiero una técnica para controlar el pánico,tecnica_respiracion
+enséñame a calmar mi mente,tecnica_respiracion
+"estoy muy tenso, ¿qué ejercicio me recomiendas?",tecnica_respiracion
+busco una forma de relajar mi cuerpo,tecnica_respiracion
+¿cómo hago respiración profunda?,tecnica_respiracion
+necesito bajar mis nervios con algún ejercicio,tecnica_respiracion
+quiero tranquilizarme antes de entrar a clase,tecnica_respiracion
+muéstrame cómo relajarme,tecnica_respiracion
+¿algún truco para respirar y calmar la ansiedad?,tecnica_respiracion
+ayúdame a soltar la tensión,tecnica_respiracion
+quiero practicar la respiración,tecnica_respiracion
+¿qué hago para calmarme en este momento?,tecnica_respiracion
+dime cómo relajarme con la respiración,tecnica_respiracion
+tengo el cuerpo tenso y quiero relajarlo,tecnica_respiracion
+no me alcanza el tiempo para nada,organizacion_tiempo
+¿cómo organizo mis pendientes de la semana?,organizacion_tiempo
+procrastino todo y se me junta,organizacion_tiempo
+no sé cómo planear mi semana,organizacion_tiempo
+quiero organizarme mejor,organizacion_tiempo
+siempre dejo todo para último momento,organizacion_tiempo
+¿cómo puedo administrar mejor mi tiempo?,organizacion_tiempo
+necesito una forma de priorizar mis tareas,organizacion_tiempo
+no logro cumplir con mi agenda,organizacion_tiempo
+se me acumulan los pendientes,organizacion_tiempo
+dame consejos para estudiar con orden,organizacion_tiempo
+¿cómo hago un horario de estudio?,organizacion_tiempo
+no sé por dónde empezar con mis pendientes,organizacion_tiempo
+me distraigo mucho y no termino nada,organizacion_tiempo
+quiero dejar de procrastinar,organizacion_tiempo
+no me rinden las horas del día,organizacion_tiempo
+¿cómo equilibro la escuela y mi vida personal?,organizacion_tiempo
+necesito ayuda para planificar mis entregas,organizacion_tiempo
+siento que pierdo el tiempo y no avanzo,organizacion_tiempo
+cómo ordeno mis prioridades,organizacion_tiempo
+no tengo método para estudiar,organizacion_tiempo
+¿qué técnica me sirve para manejar mi tiempo?,organizacion_tiempo
+me cuesta mucho organizarme con tantas materias,organizacion_tiempo
+quiero armar un plan para esta semana,organizacion_tiempo
+el tiempo se me va y no hago lo importante,organizacion_tiempo
+¿cómo le hago para ser más disciplinado con mis horarios?,organizacion_tiempo
+me falta organización para cumplir mis tareas,organizacion_tiempo
+no sé distribuir mi tiempo de estudio,organizacion_tiempo
+dime cómo planear mis pendientes,organizacion_tiempo
+quiero ser más productivo con mis horarios,organizacion_tiempo
+ando desorganizada y se me pasan las fechas,organizacion_tiempo
+cómo le hago para que me alcance el día,organizacion_tiempo
+necesito un método para llevar mi agenda,organizacion_tiempo
+lo dejo todo para última hora y luego no me da tiempo,organizacion_tiempo
+¿cómo organizo mis tiempos de estudio y descanso?,organizacion_tiempo
+quiero hablar con un psicólogo de la escuela,solicitar_cita
+¿cómo agendo una cita de orientación?,solicitar_cita
+me gustaría pedir terapia,solicitar_cita
+necesito una cita con un orientador,solicitar_cita
+¿cómo contacto al servicio de orientación?,solicitar_cita
+quiero ver a un profesional,solicitar_cita
+¿se puede sacar cita con la psicóloga?,solicitar_cita
+me gustaría recibir orientación psicológica,solicitar_cita
+a quién llamo para hablar con alguien,solicitar_cita
+¿cómo hago para tener una consulta?,solicitar_cita
+quisiera agendar una cita,solicitar_cita
+necesito terapia,solicitar_cita
+¿cómo puedo solicitar atención psicológica?,solicitar_cita
+quiero platicar con un orientador en persona,solicitar_cita
+quiero una cita para esta semana,solicitar_cita
+¿dónde me comunico para pedir una cita?,solicitar_cita
+me interesa ir con el psicólogo,solicitar_cita
+cómo se solicita una sesión de orientación,solicitar_cita
+necesito que me atienda un profesional,solicitar_cita
+¿hay psicólogos en la universidad?,solicitar_cita
+"me recomendaron ir a terapia, ¿cómo le hago?",solicitar_cita
+quiero ser atendido por un orientador,solicitar_cita
+¿cuál es el proceso para tener una cita?,solicitar_cita
+me gustaría hablar con alguien capacitado,solicitar_cita
+quiero pedir ayuda profesional,solicitar_cita
+¿cómo puedo contactar a orientación?,solicitar_cita
+dónde pido una consulta con el psicólogo,solicitar_cita
+quiero apartar una cita,solicitar_cita
+necesito atención con un especialista de la escuela,solicitar_cita
+cómo hago una cita con la orientadora,solicitar_cita
+me gustaría tener sesiones con un psicólogo,solicitar_cita
+¿puedo pedir cita sin que mis papás sepan?,solicitar_cita
+quiero empezar terapia aquí en la escuela,solicitar_cita
+cómo puedo agendar con orientación,solicitar_cita
+necesito hablar con una psicóloga lo antes posible,solicitar_cita
+¿a qué hora abren el servicio de orientación?,horarios_ubicacion
+¿en qué edificio está?,horarios_ubicacion
+¿atienden por las tardes?,horarios_ubicacion
+¿cuál es el horario de atención?,horarios_ubicacion
+¿dónde queda el servicio de orientación?,horarios_ubicacion
+¿abren los sábados?,horarios_ubicacion
+¿hasta qué hora atienden?,horarios_ubicacion
+cómo llego al servicio de orientación,horarios_ubicacion
+¿cuál es la dirección?,horarios_ubicacion
+¿en qué piso se encuentra?,horarios_ubicacion
+¿a qué hora cierran?,horarios_ubicacion
+¿están abiertos hoy?,horarios_ubicacion
+dónde puedo encontrar el servicio,horarios_ubicacion
+¿qué días atienden?,horarios_ubicacion
+¿cuál es el horario de la línea de ayuda?,horarios_ubicacion
+¿en qué lugar de la universidad están?,horarios_ubicacion
+¿tienen horario por la mañana?,horarios_ubicacion
+dime dónde están ubicados,horarios_ubicacion
+¿a qué hora empiezan a atender?,horarios_ubicacion
+¿cómo se llega al edificio de servicios estudiantiles?,horarios_ubicacion
+¿hay atención en la noche?,horarios_ubicacion
+necesito saber el horario,horarios_ubicacion
+¿atienden en vacaciones?,horarios_ubicacion
+dónde está el edificio de orientación,horarios_ubicacion
+¿cuántas horas atienden al día?,horarios_ubicacion
+¿a qué horas puedo ir?,horarios_ubicacion
+¿cuál es su ubicación exacta?,horarios_ubicacion
+abren en el receso?,horarios_ubicacion
+¿qué horario manejan?,horarios_ubicacion
+por dónde queda el servicio de orientación,horarios_ubicacion
+¿crees que tengo depresión?,fuera_de_alcance
+¿qué pastilla me recomiendas para dormir?,fuera_de_alcance
+dime si tengo un trastorno,fuera_de_alcance
+¿puedes diagnosticarme?,fuera_de_alcance
+¿qué medicamento me ayuda con la ansiedad?,fuera_de_alcance
+¿tomo antidepresivos?,fuera_de_alcance
+¿qué dosis de melatonina debo tomar?,fuera_de_alcance
+"creo que soy bipolar, ¿tú qué opinas?",fuera_de_alcance
+recétame algo para los nervios,fuera_de_alcance
+¿tengo ansiedad generalizada?,fuera_de_alcance
+¿me puedes decir si tengo un problema mental?,fuera_de_alcance
+qué medicina es buena para el estrés,fuera_de_alcance
+¿cuántas pastillas debo tomar?,fuera_de_alcance
+diagnostícame por favor,fuera_de_alcance
+¿tengo déficit de atención?,fuera_de_alcance
+dime si lo que tengo es depresión,fuera_de_alcance
+¿qué fármaco me recomiendas?,fuera_de_alcance
+¿es normal que necesite pastillas para dormir?,fuera_de_alcance
+quiero que me digas qué trastorno tengo,fuera_de_alcance
+¿puedo tomar algo para no sentir nada?,fuera_de_alcance
+¿me das una receta?,fuera_de_alcance
+¿puedo mezclar pastillas con alcohol?,fuera_de_alcance
+dime qué enfermedad mental tengo,fuera_de_alcance
+¿tengo TDAH?,fuera_de_alcance
+¿qué antidepresivo es el mejor?,fuera_de_alcance
+¿cuánto debo tomar de ese medicamento?,fuera_de_alcance
+"creo que estoy deprimido, ¿puedes confirmarlo?",fuera_de_alcance
+recomiéndame una medicina para la ansiedad,fuera_de_alcance
+¿me puedes dar un diagnóstico?,fuera_de_alcance
+¿debo medicarme?,fuera_de_alcance
+quiero mostrarte una foto,compartir_imagen
+¿puedes ver una imagen de mi cara?,compartir_imagen
+te mando una selfie para que me digas cómo me veo,compartir_imagen
+quiero subir una imagen,compartir_imagen
+tengo una foto para enseñarte,compartir_imagen
+¿puedo enviarte una fotografía?,compartir_imagen
+"mira mi cara, te paso una foto",compartir_imagen
+¿aceptas imágenes?,compartir_imagen
+quiero que veas mi expresión,compartir_imagen
+te quiero compartir una selfie,compartir_imagen
+¿puedes analizar mi foto?,compartir_imagen
+voy a mandarte una imagen,compartir_imagen
+déjame mostrarte una foto mía,compartir_imagen
+¿puedes decirme qué expresión tengo en esta foto?,compartir_imagen
+cargar una imagen,compartir_imagen
+¿se pueden subir fotos aquí?,compartir_imagen
+te enseño mi rostro en una foto,compartir_imagen
+quiero que interpretes mi cara,compartir_imagen
+"tengo una selfie, ¿la puedes ver?",compartir_imagen
+quiero adjuntar una foto,compartir_imagen
+te voy a pasar una imagen para que la veas,compartir_imagen
+¿puedes reconocer mi expresión?,compartir_imagen
+quiero que me veas en una foto,compartir_imagen
+mándame cómo enviar una foto,compartir_imagen
+¿cómo te paso una imagen?,compartir_imagen
+quiero probar con una foto de mi cara,compartir_imagen
+¿qué cara tengo en esta imagen?,compartir_imagen
+¿me dices cómo me veo en esta fotografía?,compartir_imagen
+permíteme subir una selfie,compartir_imagen
+quiero que revises una foto que me tomé,compartir_imagen
+ya no quiero seguir,crisis
+siento que no vale la pena vivir,crisis
+ya no puedo más con todo,crisis
+quiero desaparecer,crisis
+pienso en quitarme la vida,crisis
+quiero morirme,crisis
+he pensado en hacerme daño,crisis
+a veces pienso en el suicidio,crisis
+ya no quiero vivir,crisis
+me quiero matar,crisis
+quisiera acabar con todo,crisis
+siento que todos estarían mejor sin mí,crisis
+no le encuentro sentido a seguir viviendo,crisis
+me estoy lastimando,crisis
+pienso en hacerme daño cuando me siento mal,crisis
+"ya no aguanto más, quiero morir",crisis
+no quiero despertar mañana,crisis
+estoy pensando en suicidarme,crisis
+prefiero no existir,crisis
+me quiero quitar la vida,crisis
+me hago cortes cuando todo me supera,crisis
+ya no veo salida y quiero acabar con mi vida,crisis
+estoy harto de vivir,crisis
+a nadie le importaría si desaparezco,crisis
+siento que ya no puedo seguir,crisis
+tengo ganas de morirme,crisis
+no quiero seguir viviendo así,crisis
+he pensado en terminar con todo,crisis
+quiero hacerme daño,crisis
+mejor desaparecer para siempre,crisis

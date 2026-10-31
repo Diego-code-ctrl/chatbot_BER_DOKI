@@ -120,6 +120,15 @@
       ]
     },
     {
+      "nombre": "compartir_imagen",
+      "prioridad": 3,
+      "palabras_clave": ["foto", "fotos", "fotografia", "imagen", "imagenes", "selfie"],
+      "patrones": ["mostrarte una", "te mando una", "te paso una", "subir una"],
+      "respuestas": [
+        "Puedes compartir una foto de tu rostro si lo deseas; es opcional. Solo la usaré en este momento para describir una expresión facial aparente, que puede ser incorrecta, y no la guardo. Si quieres continuar, escribe la ruta de la imagen y confirma que autorizas su uso."
+      ]
+    },
+    {
       "nombre": "ayuda_capacidades",
       "prioridad": 4,
       "palabras_clave": ["ayuda", "ayudas", "ayudar", "puedes", "funcionas", "funciona", "eres", "temas", "opciones"],
