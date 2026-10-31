@@ -1,57 +1,14 @@
-from nltk import re, SnowballStemmer
+from preprocesamiento import normalizar_texto, tokenizar_y_stem, stemmer
 from pathlib import Path
-import unicodedata
-import nltk
 import json
 
 # Importa las relgas desde el json
-ruta_reglas = Path('reglas.json').with_name('reglas.json')
+ruta_reglas = Path(__file__).with_name('reglas.json')
 reglas = None
 
 # Crea un diccionario con las reglas del json para no modificar el código
 with ruta_reglas.open(encoding='utf-8') as archivo:
     reglas = json.load(archivo)
-
-# Inicialización del stemmer
-stemmer = SnowballStemmer('spanish')
-
-# Verifica que el texto sea válido, no sea nulo o esté vacío
-def __texto_valido(texto: str | None) -> bool:
-    return texto is not None and bool(re.search(r"\S", texto))
-
-def normalizar_texto(texto: str | None) -> str:
-    """
-    Normaliza el texto, quitando los carácteres especiales, puntuaciones
-    o inlcuso espacios duplicados, proceso antes de tokenizar
-    """
-    if not __texto_valido(texto):
-        return ''
-    
-    texto = texto.lower().replace('ñ', '\0')
-    texto = unicodedata.normalize('NFD', texto)
-    texto = "".join(
-        caracter
-        for caracter in texto
-        if unicodedata.category(caracter) != 'Mn'
-    )
-    texto = texto.replace('\0', 'ñ')
-    texto = ''.join(
-        caracter
-        for caracter in texto
-        if caracter.isalnum() or caracter.isspace()
-    )
-
-    return ' '.join(texto.split())
-
-def tokenizar_y_stem(texto: str | None) -> tuple[list[str], list[str]]:
-    texto_normalizado = normalizar_texto(texto)
-    if not texto_normalizado:
-        return [], []
-
-    tokens = nltk.word_tokenize(texto_normalizado, language='spanish')
-    stems = [stemmer.stem(token) for token in tokens]
-
-    return tokens, stems
 
 def detectar_intencion(texto: str | None) -> tuple[str, int]:
     tokens, stems = tokenizar_y_stem(texto)
