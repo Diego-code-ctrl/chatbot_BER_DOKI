@@ -1,0 +1,9 @@
+real,predicha,imagenes
+tristeza,neutral,128
+miedo,tristeza,83
+neutral,tristeza,79
+miedo,neutral,79
+enojo,neutral,64
+enojo,tristeza,53
+neutral,alegría,51
+miedo,enojo,49

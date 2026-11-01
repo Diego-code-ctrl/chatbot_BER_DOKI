@@ -1,0 +1,8 @@
+real_vs_predicha,enojo,asco,miedo,alegría,tristeza,sorpresa,neutral
+enojo,213,33,32,33,53,16,64
+asco,6,29,0,2,0,1,1
+miedo,49,25,156,20,83,48,79
+alegría,19,4,7,756,19,14,41
+tristeza,49,23,49,44,292,13,128
+sorpresa,14,4,22,18,7,212,12
+neutral,25,7,26,51,79,5,393

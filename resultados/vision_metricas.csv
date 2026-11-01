@@ -1,0 +1,6 @@
+metrica,EfficientNet-B0,ResNet50 (si se entrena),CNN desde cero (referencia)
+accuracy,0.6261,No entrenado,0.351
+precision_macro,0.562,No entrenado,0.3164
+recall_macro,0.6191,No entrenado,0.3209
+f1_macro,0.5663,No entrenado,0.2913
+f1_ponderado,0.6201,No entrenado,0.3374
