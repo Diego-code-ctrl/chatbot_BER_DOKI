@@ -1,0 +1,18 @@
+texto,real,predicha,confianza
+llevo una semana durmiendo muy poco,sueno,organizacion_tiempo,0.482
+la universidad me está consumiendo,estres_academico,horarios_ubicacion,0.4
+dónde está el edificio de orientación,horarios_ubicacion,solicitar_cita,0.371
+no logro cumplir con mi agenda,organizacion_tiempo,sueno,0.341
+recétame algo para los nervios,fuera_de_alcance,ansiedad_examenes,0.489
+no me rinden las horas del día,organizacion_tiempo,sueno,0.354
+¿qué horario manejan?,horarios_ubicacion,organizacion_tiempo,0.388
+¿puedo tomar algo para no sentir nada?,fuera_de_alcance,organizacion_tiempo,0.213
+¿qué tipo de ayuda das?,ayuda_capacidades,fuera_de_alcance,0.44
+ya no doy abasto con los trabajos,estres_academico,ayuda_capacidades,0.279
+me siento saturada de pendientes,estres_academico,organizacion_tiempo,0.585
+siempre dejo todo para último momento,organizacion_tiempo,sueno,0.242
+temo quedarme en blanco en la defensa,ansiedad_examenes,ayuda_capacidades,0.382
+wenas,saludo,fuera_de_alcance,0.129
+no puedo calmarme antes de un examen,ansiedad_examenes,tecnica_respiracion,0.467
+hasta pronto,despedida,fuera_de_alcance,0.129
+¿me puedes decir de qué trata este servicio?,ayuda_capacidades,horarios_ubicacion,0.443

@@ -1,0 +1,7 @@
+configuracion,f1_macro_validacion_cruzada,mejores_parametros,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted
+Naive Bayes + TF-IDF,0.7583,"{""clf__alpha"": ""0.3"", ""vec__max_features"": ""300"", ""vec__ngram_range"": ""(1, 1)""}",0.6951,0.7119,0.6941,0.6841,0.7054,0.6951,0.6815
+Naive Bayes + Bag of Words,0.7299,"{""clf__alpha"": ""0.3"", ""vec__max_features"": ""300"", ""vec__ngram_range"": ""(1, 1)""}",0.7073,0.7209,0.707,0.7033,0.7178,0.7073,0.7017
+SVM lineal + TF-IDF,0.7623,"{""clf__estimator__C"": ""1"", ""vec__max_features"": ""None"", ""vec__ngram_range"": ""(1, 1)""}",0.7927,0.815,0.7967,0.7975,0.8144,0.7927,0.7947
+SVM lineal + Bag of Words,0.7572,"{""clf__estimator__C"": ""1"", ""vec__max_features"": ""300"", ""vec__ngram_range"": ""(1, 1)""}",0.7439,0.783,0.7473,0.7496,0.7819,0.7439,0.7472
+Reglas del Avance 1 (línea base),,,0.7317,0.9048,0.7326,0.7814,0.9024,0.7317,0.7809
+Híbrido: SVM lineal + TF-IDF + crisis por reglas,,,0.7927,0.815,0.7967,0.7975,0.8144,0.7927,0.7947

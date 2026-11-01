@@ -1,0 +1,4 @@
+mecanismo,recall_crisis,mensajes_crisis
+Clasificador,1.0,6
+Reglas del Avance 1,0.1667,6
+Combinado (reglas o clasificador),1.0,6
