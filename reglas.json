@@ -2,6 +2,21 @@
   "configuracion": {
     "umbral_minimo": 1
   },
+  "vision": {
+    "intenciones_con_frase": ["estres_academico", "ansiedad_examenes", "sueno", "tecnica_respiracion", "organizacion_tiempo"],
+    "frases": {
+      "alegría": "Me parece ver una expresión alegre, aunque puedo equivocarme. ¿Hay algo que quieras contarme?",
+      "tristeza": "Me parece ver una expresión triste o cansada, aunque puedo equivocarme. ¿Quieres contarme cómo te sientes?",
+      "enojo": "Me parece ver una expresión de molestia, aunque puedo equivocarme. ¿Qué está pasando?",
+      "miedo": "Me parece ver una expresión de preocupación, aunque puedo equivocarme. ¿Quieres platicarme qué te inquieta?",
+      "sorpresa": "Me parece ver una expresión de sorpresa, aunque puedo equivocarme. ¿Pasó algo inesperado?",
+      "asco": "Me parece ver una expresión de desagrado, aunque puedo equivocarme. ¿Hay algo que te incomode?",
+      "neutral": "Veo una expresión serena, aunque puedo equivocarme. ¿En qué te puedo ayudar?"
+    },
+    "aviso_baja_confianza": "No pude interpretar la imagen con seguridad, así que continúo solo con lo que me escribes.",
+    "aviso_sin_consentimiento": "Entendido, no usaré la imagen. Continúo solo con lo que me escribes.",
+    "aviso_archivo_no_encontrado": "No encontré ese archivo, así que continúo solo con lo que me escribes."
+  },
   "datos_institucionales": {
     "horario": "lunes a viernes, de 9:00 a 18:00",
     "ubicacion": "Edificio de Servicios Estudiantiles, planta baja",

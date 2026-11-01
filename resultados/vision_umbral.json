@@ -1,0 +1,8 @@
+{
+  "modelo": "EfficientNet-B0",
+  "conjunto": "validación",
+  "precision_objetivo": 0.75,
+  "umbral": 0.55,
+  "imagenes_aceptadas_pct": 58.0,
+  "precision_de_aceptadas": 0.775
+}

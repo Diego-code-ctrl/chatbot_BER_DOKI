@@ -63,9 +63,7 @@ def detectar_entidades(texto: str | None) -> dict[str, list[str]]:
 
     return {'tema': temas_detectados}
 
-def generar_respuesta(mensaje: str | None) -> str:
-    nombre_intencion, _ = detectar_intencion(mensaje)
-
+def respuesta_de_intencion(nombre_intencion: str) -> str:
     if nombre_intencion == 'fallback':
         return reglas['fallback'][0]
 
@@ -77,7 +75,14 @@ def generar_respuesta(mensaje: str | None) -> str:
     respuesta = intencion['respuestas'][0]
     return respuesta.format(**reglas['datos_institucionales'])
 
+def generar_respuesta(mensaje: str | None) -> str:
+    nombre_intencion, _ = detectar_intencion(mensaje)
+    return respuesta_de_intencion(nombre_intencion)
+
 def iniciar_chatbot() -> None:
+    from integrador import crear_integrador
+
+    integrador = crear_integrador()
     print('Hola, soy DOKi, un chatbot para ayuda a la salud mental\n de estudiantes nivel universidad\n ¿En qué puedo ayudarte?')
 
     while True:
@@ -86,7 +91,11 @@ def iniciar_chatbot() -> None:
         if texto.lower() == 'salir':
             break
 
-        print(generar_respuesta(texto))
+        autoriza = False
+        if integrador.esperando_imagen and Path(texto.strip()).is_file():
+            autoriza = input('¿Autorizas el uso de esta imagen solo para esta conversación? (sí/no) ').strip().lower() in ('si', 'sí')
+
+        print(integrador.turno(texto, autoriza=autoriza))
         print('¿Puedo ayudarte en otra cosa? \n')
 
 if __name__ == '__main__':
