@@ -1,0 +1,33 @@
+{
+  "arquitectura": "efficientnet_b0",
+  "preentrenado_imagenet": true,
+  "parametros_totales": 4016515,
+  "lote": 64,
+  "lr_fase_1": 0.001,
+  "lr_fase_2": 5e-05,
+  "epocas_maximas_fase_1": 5,
+  "epocas_maximas_fase_2": 10,
+  "bloques_descongelados": 3,
+  "paciencia": 3,
+  "optimizador": "Adam",
+  "dropout": 0.3,
+  "imagenes_por_clase_y_particion_limite": null,
+  "imagenes_por_particion": {
+    "entrenamiento": 28709,
+    "validacion": 3306,
+    "prueba": 3276
+  },
+  "depuracion": {
+    "etiquetas_contradictorias": 33,
+    "duplicados_con_entrenamiento": 539,
+    "duplicados_entre_validacion_y_prueba": 24
+  },
+  "dispositivo": "mps",
+  "sistema": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.14.6",
+  "pytorch": "2.15.0",
+  "torchvision": "0.29.2",
+  "semilla": 42,
+  "epocas_entrenadas": 15,
+  "tiempo_entrenamiento_segundos": 2854
+}
