@@ -1,0 +1,7 @@
+{
+  "etiquetas_contradictorias": 33,
+  "duplicados_con_entrenamiento": 539,
+  "duplicados_entre_validacion_y_prueba": 24,
+  "imagenes_antes": 35887,
+  "imagenes_despues": 35291
+}
