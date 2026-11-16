@@ -1,18 +1,27 @@
 texto,real,predicha,confianza
-llevo una semana durmiendo muy poco,sueno,organizacion_tiempo,0.482
-la universidad me está consumiendo,estres_academico,horarios_ubicacion,0.4
-dónde está el edificio de orientación,horarios_ubicacion,solicitar_cita,0.371
-no logro cumplir con mi agenda,organizacion_tiempo,sueno,0.341
-recétame algo para los nervios,fuera_de_alcance,ansiedad_examenes,0.489
-no me rinden las horas del día,organizacion_tiempo,sueno,0.354
-¿qué horario manejan?,horarios_ubicacion,organizacion_tiempo,0.388
-¿puedo tomar algo para no sentir nada?,fuera_de_alcance,organizacion_tiempo,0.213
-¿qué tipo de ayuda das?,ayuda_capacidades,fuera_de_alcance,0.44
-ya no doy abasto con los trabajos,estres_academico,ayuda_capacidades,0.279
-me siento saturada de pendientes,estres_academico,organizacion_tiempo,0.585
-siempre dejo todo para último momento,organizacion_tiempo,sueno,0.242
-temo quedarme en blanco en la defensa,ansiedad_examenes,ayuda_capacidades,0.382
-wenas,saludo,fuera_de_alcance,0.129
-no puedo calmarme antes de un examen,ansiedad_examenes,tecnica_respiracion,0.467
-hasta pronto,despedida,fuera_de_alcance,0.129
-¿me puedes decir de qué trata este servicio?,ayuda_capacidades,horarios_ubicacion,0.443
+menu,ayuda_capacidades,despedida,0.227
+estoy deprimido hoy,animo_bajo,fuera_de_alcance,0.516
+siento que soy una carga para todos,crisis,estres_academico,0.461
+me fue mal en mate otra vez,estres_academico,crisis,0.35
+todos los profesores dejaron proyecto al mismo tiempo,estres_academico,organizacion_tiempo,0.701
+necesito un método para llevar mi agenda,organizacion_tiempo,solicitar_cita,0.421
+dime qué opciones tengo,ayuda_capacidades,fuera_de_alcance,0.62
+quisiera dormirme y no despertar,crisis,sueno,0.545
+nadie me entiende,animo_bajo,crisis,0.533
+¿qué opinas de la política?,otro_tema,fuera_de_alcance,0.354
+¿cómo contacto al servicio de orientación?,solicitar_cita,horarios_ubicacion,0.742
+me cuesta mucho organizarme con tantas materias,organizacion_tiempo,estres_academico,0.514
+¿para qué eres bueno?,ayuda_capacidades,saludo,0.607
+¿en qué lugar de la universidad están?,horarios_ubicacion,estres_academico,0.375
+traigo mil pendientes y no puedo,estres_academico,organizacion_tiempo,0.364
+¿cómo arreglo mi computadora?,otro_tema,organizacion_tiempo,0.321
+me pueden atender,solicitar_cita,ayuda_capacidades,0.388
+saludos,saludo,otro_tema,0.188
+estoy decaído,animo_bajo,fuera_de_alcance,0.219
+¿dónde está la oficina de psicología?,horarios_ubicacion,solicitar_cita,0.339
+tengo ganas de morirme,crisis,animo_bajo,0.375
+qué hubo,saludo,ayuda_capacidades,0.364
+¿qué celular me compro?,otro_tema,sueno,0.428
+¿qué me tomo para los nervios?,fuera_de_alcance,tecnica_respiracion,0.323
+¿va a llover mañana?,otro_tema,ansiedad_examenes,0.466
+me hacen bullying,animo_bajo,ayuda_capacidades,0.391

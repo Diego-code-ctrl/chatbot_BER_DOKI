@@ -409,3 +409,384 @@ no quiero seguir viviendo así,crisis
 he pensado en terminar con todo,crisis
 quiero hacerme daño,crisis
 mejor desaparecer para siempre,crisis
+holi,saludo
+que onda,saludo
+buenas,saludo
+holaa,saludo
+"hola, quiero platicar",saludo
+hola de nuevo,saludo
+ey doki,saludo
+"hola, ¿estás ahí?",saludo
+oye,saludo
+qué onda doki,saludo
+"buenas, ¿me puedes ayudar?",saludo
+hola que tal,saludo
+"hola, soy estudiante",saludo
+que hay,saludo
+ya me voy,despedida
+gracias doki,despedida
+eso es todo por hoy,despedida
+luego te escribo,despedida
+me tengo que ir,despedida
+muchas gracias por todo,despedida
+"ya estoy mejor, gracias",despedida
+te lo agradezco,despedida
+grax,despedida
+"gracias, me ayudaste",despedida
+"bueno, me despido",despedida
+ya no necesito nada más,despedida
+cuídate,despedida
+adiosito,despedida
+chau,despedida
+"gracias, bye",despedida
+"ya quedó, gracias",despedida
+gracias por tu tiempo,despedida
+"me voy a dormir, gracias",despedida
+nos vemos luego,despedida
+mil gracias,despedida
+¿para qué sirves?,ayuda_capacidades
+¿qué eres?,ayuda_capacidades
+¿eres una persona?,ayuda_capacidades
+¿con qué me ayudas?,ayuda_capacidades
+no sé qué preguntarte,ayuda_capacidades
+¿qué puedo hacer aquí?,ayuda_capacidades
+explícame qué haces,ayuda_capacidades
+¿eres un robot?,ayuda_capacidades
+¿de qué puedo hablar contigo?,ayuda_capacidades
+dime tus funciones,ayuda_capacidades
+menu,ayuda_capacidades
+opciones,ayuda_capacidades
+¿qué me recomiendas preguntarte?,ayuda_capacidades
+¿me puedes ayudar con algo?,ayuda_capacidades
+ayuda,ayuda_capacidades
+necesito ayuda pero no sé con qué,ayuda_capacidades
+"¿qué onda contigo, qué haces?",ayuda_capacidades
+¿hablas con un psicólogo de verdad?,ayuda_capacidades
+¿cómo me puedes ayudar?,ayuda_capacidades
+estoy hasta el cuello de tareas,estres_academico
+la escuela me tiene harto,estres_academico
+traigo mil pendientes y no puedo,estres_academico
+me siento saturada con la uni,estres_academico
+ya no puedo con tantas entregas,estres_academico
+estoy reventado de trabajos,estres_academico
+tengo demasiada carga este semestre,estres_academico
+siento mucha presión con las calificaciones,estres_academico
+la carrera me está rebasando,estres_academico
+estoy estresadisimo,estres_academico
+me agobia todo lo que tengo que entregar,estres_academico
+no paro de pensar en la escuela,estres_academico
+tengo proyectos finales y estoy colapsando,estres_academico
+siento que no voy a pasar el semestre,estres_academico
+mis profes dejan demasiado,estres_academico
+estoy quemado de la escuela,estres_academico
+me estresa mucho la tesis,estres_academico
+ando super estresada,estres_academico
+no aguanto la presión de mis papás por las calificaciones,estres_academico
+tengo tres proyectos para el viernes,estres_academico
+siento que voy a reprobar todo,estres_academico
+la uni me está matando de estrés,estres_academico
+me abruma la cantidad de tareas,estres_academico
+estoy muy tenso por las entregas,estres_academico
+cada semana es peor con la escuela,estres_academico
+mañana tengo final y estoy temblando,ansiedad_examenes
+me pongo muy nervioso antes de los exámenes,ansiedad_examenes
+me da pánico el examen,ansiedad_examenes
+se me olvida todo cuando presento,ansiedad_examenes
+tengo miedo de reprobar el parcial,ansiedad_examenes
+siento el corazón acelerado antes del examen,ansiedad_examenes
+no puedo dejar de pensar en el examen de mañana,ansiedad_examenes
+tengo examen y me tiemblan las manos,ansiedad_examenes
+me dan nervios exponer frente al grupo,ansiedad_examenes
+me angustia el extraordinario,ansiedad_examenes
+siento ansiedad por el examen de admisión,ansiedad_examenes
+me sudan las manos cuando presento,ansiedad_examenes
+estudié pero siento que voy a fallar,ansiedad_examenes
+me da ansiedad la evaluación oral,ansiedad_examenes
+tengo miedo de quedarme en blanco,ansiedad_examenes
+me pone mal el examen departamental,ansiedad_examenes
+siento un nudo en el estómago por el examen,ansiedad_examenes
+cada examen me pone fatal,ansiedad_examenes
+me da miedo presentar mi proyecto,ansiedad_examenes
+me pongo muy ansiosa con los quizzes,ansiedad_examenes
+no duermo por los nervios del examen,ansiedad_examenes
+tengo examen de mate y me siento fatal,ansiedad_examenes
+siento que se me va a olvidar todo,ansiedad_examenes
+me da terror el examen final,ansiedad_examenes
+llevo noches sin dormir bien,sueno
+me despierto a cada rato,sueno
+me desvelo diario por la tarea,sueno
+duermo como cuatro horas,sueno
+me cuesta mucho quedarme dormido,sueno
+ando todo el día con sueño,sueno
+me la paso desvelada,sueno
+no descanso aunque duerma,sueno
+me acuesto y no me puedo dormir,sueno
+tengo el sueño todo desordenado,sueno
+me duermo en clase,sueno
+me despierto muy cansado,sueno
+llevo días durmiendo mal,sueno
+me quedo viendo el celular hasta tarde,sueno
+me despierto a las 3 y ya no me duermo,sueno
+no logro descansar,sueno
+estoy agotado por no dormir,sueno
+pesadillas casi diario,sueno
+duermo poquito,sueno
+tengo mucho sueño siempre,sueno
+me cuesta levantarme,sueno
+mi horario de sueño está fatal,sueno
+no he dormido nada,sueno
+enséñame a respirar,tecnica_respiracion
+quiero relajarme,tecnica_respiracion
+dame un ejercicio para calmarme,tecnica_respiracion
+necesito tranquilizarme,tecnica_respiracion
+¿cómo me calmo rápido?,tecnica_respiracion
+quiero una técnica de relajación,tecnica_respiracion
+algo para bajar la ansiedad ahorita,tecnica_respiracion
+ejercicio de respiración porfa,tecnica_respiracion
+necesito calmarme ya,tecnica_respiracion
+¿cómo respiro para relajarme?,tecnica_respiracion
+enséñame la técnica,tecnica_respiracion
+dame un tip para relajarme,tecnica_respiracion
+quiero hacer el ejercicio de respiración,tecnica_respiracion
+¿tienes algún ejercicio para la ansiedad?,tecnica_respiracion
+me quiero relajar antes de dormir,tecnica_respiracion
+necesito algo para los nervios,tecnica_respiracion
+¿qué hago para tranquilizarme?,tecnica_respiracion
+ayúdame a calmarme,tecnica_respiracion
+algo para sentirme más tranquila,tecnica_respiracion
+una técnica para la tensión,tecnica_respiracion
+quiero respirar mejor,tecnica_respiracion
+cómo me relajo,tecnica_respiracion
+dame la técnica de respiración,tecnica_respiracion
+"me siento acelerado, ¿qué hago?",tecnica_respiracion
+organizar mi tiempo,organizacion_tiempo
+no me organizo,organizacion_tiempo
+quiero organizarme,organizacion_tiempo
+ayúdame a organizarme,organizacion_tiempo
+organización,organizacion_tiempo
+cómo organizo mi semana,organizacion_tiempo
+necesito hacer un horario,organizacion_tiempo
+no sé cómo acomodar mis tareas,organizacion_tiempo
+soy muy desorganizado,organizacion_tiempo
+todo lo dejo al final,organizacion_tiempo
+procrastino mucho,organizacion_tiempo
+cómo dejo de procrastinar,organizacion_tiempo
+no me da tiempo de nada,organizacion_tiempo
+quiero aprovechar mejor mi día,organizacion_tiempo
+cómo planeo mis entregas,organizacion_tiempo
+necesito priorizar,organizacion_tiempo
+no sé qué hacer primero,organizacion_tiempo
+tengo muchas cosas y no sé por dónde empezar,organizacion_tiempo
+quiero hacer un plan de estudio,organizacion_tiempo
+cómo manejo mejor mi tiempo,organizacion_tiempo
+me falta tiempo para todo,organizacion_tiempo
+cómo combino escuela y trabajo,organizacion_tiempo
+quiero ser más organizada,organizacion_tiempo
+tips para organizarme,organizacion_tiempo
+gestión del tiempo,organizacion_tiempo
+quiero hablar con una persona,solicitar_cita
+quiero hablar con alguien,solicitar_cita
+necesito un psicólogo,solicitar_cita
+quiero ir a orientación,solicitar_cita
+¿cómo saco cita?,solicitar_cita
+quiero agendar,solicitar_cita
+me gustaría ver a un orientador,solicitar_cita
+¿puedo hablar con un psicólogo?,solicitar_cita
+necesito ayuda profesional,solicitar_cita
+quiero atención psicológica,solicitar_cita
+¿cómo pido una cita?,solicitar_cita
+quiero una cita,solicitar_cita
+me pueden atender,solicitar_cita
+quiero que alguien me escuche en persona,solicitar_cita
+necesito hablar con un profesional,solicitar_cita
+¿dónde pido terapia?,solicitar_cita
+quiero ir con la psicóloga de la escuela,solicitar_cita
+cómo me registro para orientación,solicitar_cita
+quiero apoyo de un especialista,solicitar_cita
+quiero hablar con alguien de verdad,solicitar_cita
+¿cuesta la cita?,solicitar_cita
+quiero una consulta,solicitar_cita
+me interesa la cita,solicitar_cita
+cómo agendo con orientación,solicitar_cita
+¿dónde está orientación?,horarios_ubicacion
+¿a qué hora abren?,horarios_ubicacion
+¿dónde queda el servicio?,horarios_ubicacion
+¿cuál es el horario?,horarios_ubicacion
+¿en qué edificio están?,horarios_ubicacion
+¿tienen teléfono?,horarios_ubicacion
+horario de atención,horarios_ubicacion
+¿dónde los encuentro?,horarios_ubicacion
+ubicación de orientación,horarios_ubicacion
+¿cuál es el número de contacto?,horarios_ubicacion
+dirección del servicio,horarios_ubicacion
+¿dónde está la oficina de psicología?,horarios_ubicacion
+¿en qué piso está?,horarios_ubicacion
+cómo llego a orientación,horarios_ubicacion
+¿hay atención en la tarde?,horarios_ubicacion
+¿tienen línea de ayuda?,horarios_ubicacion
+datos de contacto,horarios_ubicacion
+¿a qué número llamo?,horarios_ubicacion
+¿atienden en línea?,horarios_ubicacion
+¿tengo depresión?,fuera_de_alcance
+¿qué pastilla me tomo para dormir?,fuera_de_alcance
+dime si tengo ansiedad,fuera_de_alcance
+recétame algo,fuera_de_alcance
+¿me puedes diagnosticar?,fuera_de_alcance
+¿qué medicamento sirve para la ansiedad?,fuera_de_alcance
+¿soy bipolar?,fuera_de_alcance
+¿puedo tomar clonazepam?,fuera_de_alcance
+¿es normal tomar antidepresivos?,fuera_de_alcance
+¿qué dosis de melatonina tomo?,fuera_de_alcance
+¿tengo un trastorno?,fuera_de_alcance
+dime qué enfermedad tengo,fuera_de_alcance
+¿qué antidepresivo es mejor?,fuera_de_alcance
+"creo que tengo TOC, ¿sí?",fuera_de_alcance
+¿puedo dejar mis medicamentos?,fuera_de_alcance
+¿necesito pastillas?,fuera_de_alcance
+hazme un diagnóstico,fuera_de_alcance
+¿qué me tomo para los nervios?,fuera_de_alcance
+¿esto es ansiedad generalizada?,fuera_de_alcance
+¿tengo ataques de pánico?,fuera_de_alcance
+¿me recomiendas algún fármaco?,fuera_de_alcance
+dime si estoy deprimido,fuera_de_alcance
+te mando foto,compartir_imagen
+quiero mandarte una selfie,compartir_imagen
+¿puedo enviarte una foto?,compartir_imagen
+te comparto una imagen,compartir_imagen
+mira mi cara,compartir_imagen
+checa mi foto,compartir_imagen
+¿qué ves en mi foto?,compartir_imagen
+te enseño cómo me veo,compartir_imagen
+quiero subir una foto,compartir_imagen
+analiza mi foto,compartir_imagen
+aquí va mi foto,compartir_imagen
+te paso una selfie,compartir_imagen
+¿puedes ver mi expresión?,compartir_imagen
+quiero que veas mi cara,compartir_imagen
+mando imagen,compartir_imagen
+quiero compartir mi foto,compartir_imagen
+¿cómo me veo?,compartir_imagen
+te adjunto una foto,compartir_imagen
+checa esta imagen,compartir_imagen
+voy a mandar una foto,compartir_imagen
+ve mi foto,compartir_imagen
+¿te puedo mostrar mi cara?,compartir_imagen
+foto,compartir_imagen
+quiero usar la cámara,compartir_imagen
+te tomo una foto,compartir_imagen
+ya no quiero estar aquí,crisis
+quisiera dormirme y no despertar,crisis
+siento que soy una carga para todos,crisis
+no le veo sentido a nada,crisis
+a veces pienso que sería mejor no estar,crisis
+"ya me cansé de todo, quiero que termine",crisis
+he pensado en cómo hacerme daño,crisis
+me lastimo cuando estoy mal,crisis
+nadie me extrañaría,crisis
+quiero dejar de existir,crisis
+tengo pensamientos de muerte,crisis
+ya no aguanto vivir así,crisis
+me corto para sentirme mejor,crisis
+quiero terminar con mi vida,crisis
+pienso en aventarme,crisis
+tengo ganas de desaparecer para siempre,crisis
+ya no tengo razones para vivir,crisis
+estoy pensando en matarme,crisis
+quiero que todo se acabe,crisis
+me he hecho daño a propósito,crisis
+sería mejor si no existiera,crisis
+ya planeé cómo hacerlo,crisis
+no quiero seguir aquí,crisis
+siento que ya no hay salida,crisis
+"no veo futuro, quiero acabar",crisis
+me siento triste,animo_bajo
+estoy muy triste,animo_bajo
+me siento solo,animo_bajo
+me siento muy sola,animo_bajo
+me peleé con mi novia,animo_bajo
+terminé con mi novio,animo_bajo
+extraño a mi familia,animo_bajo
+me siento mal,animo_bajo
+me siento muy mal,animo_bajo
+ando bajoneado,animo_bajo
+estoy deprimido hoy,animo_bajo
+no tengo ganas de nada,animo_bajo
+me siento vacía,animo_bajo
+tuve un día horrible,animo_bajo
+nadie me entiende,animo_bajo
+tengo problemas en mi casa,animo_bajo
+mis papás se pelean mucho,animo_bajo
+me siento desmotivado,animo_bajo
+no tengo amigos en la uni,animo_bajo
+me rompieron el corazón,animo_bajo
+estoy decaído,animo_bajo
+lloro sin razón,animo_bajo
+me siento fuera de lugar,animo_bajo
+me siento muy desanimada,animo_bajo
+falleció mi abuelito,animo_bajo
+estoy de luto,animo_bajo
+me siento rechazado,animo_bajo
+me cuesta hacer amigos,animo_bajo
+me siento inútil,animo_bajo
+siento que no valgo,animo_bajo
+estoy enojado con todo,animo_bajo
+me siento frustrada,animo_bajo
+extraño mi casa,animo_bajo
+me mudé y me siento solo,animo_bajo
+mi familia no me apoya,animo_bajo
+tengo el ánimo por los suelos,animo_bajo
+me siento triste todo el tiempo,animo_bajo
+me siento abandonado,animo_bajo
+tuve una pelea con mi mejor amiga,animo_bajo
+nada me emociona,animo_bajo
+me siento apagado,animo_bajo
+estoy pasando por una ruptura,animo_bajo
+me hacen bullying,animo_bajo
+me siento ignorado,animo_bajo
+tengo el corazón roto,animo_bajo
+¿quién ganó el partido?,otro_tema
+recomiéndame una película,otro_tema
+cómo hago una pizza,otro_tema
+¿qué opinas de la política?,otro_tema
+¿cuál es la capital de Francia?,otro_tema
+cuéntame un chiste,otro_tema
+¿va a llover mañana?,otro_tema
+resuélveme esta ecuación,otro_tema
+¿cuánto es 25 por 4?,otro_tema
+hazme la tarea de historia,otro_tema
+¿qué celular me compro?,otro_tema
+¿cuál es tu color favorito?,otro_tema
+escríbeme un ensayo,otro_tema
+¿quién es el presidente?,otro_tema
+pon música,otro_tema
+¿me recomiendas una serie?,otro_tema
+¿cómo se programa en python?,otro_tema
+¿qué hora es?,otro_tema
+traduce esto al inglés,otro_tema
+¿dónde venden tacos buenos?,otro_tema
+¿qué equipo te gusta?,otro_tema
+jajaja,otro_tema
+xd,otro_tema
+lol,otro_tema
+asdf,otro_tema
+¿cuántos años tienes?,otro_tema
+¿te gusta el fútbol?,otro_tema
+dime una receta de pastel,otro_tema
+¿cómo arreglo mi computadora?,otro_tema
+¿qué juego me recomiendas?,otro_tema
+¿cuál es el mejor anime?,otro_tema
+explícame la fotosíntesis,otro_tema
+¿cuándo es el próximo puente?,otro_tema
+¿quién canta esta canción?,otro_tema
+háblame de dinosaurios,otro_tema
+¿qué es la inflación?,otro_tema
+necesito un resumen del libro,otro_tema
+¿cómo saco mi licencia?,otro_tema
+cuál es el precio del dólar,otro_tema
+búscame vuelos baratos,otro_tema
+me dio lástima no ir a la fiesta de la facultad,animo_bajo
+qué lástima que se canceló la clase,otro_tema
+"me da lástima mi perrito, está enfermo",animo_bajo
+me fue mal en mate otra vez,estres_academico
+la tarea de matemáticas me está matando,estres_academico
+mejor lo dejo para mañana,organizacion_tiempo

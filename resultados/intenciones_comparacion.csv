@@ -1,7 +1,8 @@
 configuracion,f1_macro_validacion_cruzada,mejores_parametros,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted
-Naive Bayes + TF-IDF,0.7583,"{""clf__alpha"": ""0.3"", ""vec__max_features"": ""300"", ""vec__ngram_range"": ""(1, 1)""}",0.6951,0.7119,0.6941,0.6841,0.7054,0.6951,0.6815
-Naive Bayes + Bag of Words,0.7299,"{""clf__alpha"": ""0.3"", ""vec__max_features"": ""300"", ""vec__ngram_range"": ""(1, 1)""}",0.7073,0.7209,0.707,0.7033,0.7178,0.7073,0.7017
-SVM lineal + TF-IDF,0.7623,"{""clf__estimator__C"": ""1"", ""vec__max_features"": ""None"", ""vec__ngram_range"": ""(1, 1)""}",0.7927,0.815,0.7967,0.7975,0.8144,0.7927,0.7947
-SVM lineal + Bag of Words,0.7572,"{""clf__estimator__C"": ""1"", ""vec__max_features"": ""300"", ""vec__ngram_range"": ""(1, 1)""}",0.7439,0.783,0.7473,0.7496,0.7819,0.7439,0.7472
-Reglas del Avance 1 (línea base),,,0.7317,0.9048,0.7326,0.7814,0.9024,0.7317,0.7809
-Híbrido: SVM lineal + TF-IDF + crisis por reglas,,,0.7927,0.815,0.7967,0.7975,0.8144,0.7927,0.7947
+Naive Bayes + TF-IDF,0.7329,"{""clf__alpha"": ""0.3"", ""vec__max_features"": ""None"", ""vec__ngram_range"": ""(1, 2)""}",0.7484,0.8103,0.7308,0.732,0.7973,0.7484,0.7407
+Naive Bayes + Bag of Words,0.716,"{""clf__alpha"": ""0.1"", ""vec__max_features"": ""None"", ""vec__ngram_range"": ""(1, 1)""}",0.7296,0.7834,0.7142,0.715,0.7725,0.7296,0.7231
+SVM lineal + TF-IDF,0.79,"{""clf__estimator__C"": ""1"", ""vec__max_features"": ""None"", ""vec__ngram_range"": ""(1, 1)""}",0.7799,0.7883,0.7729,0.7707,0.7977,0.7799,0.7795
+SVM lineal + Bag of Words,0.7767,"{""clf__estimator__C"": ""0.1"", ""vec__max_features"": ""None"", ""vec__ngram_range"": ""(1, 1)""}",0.7421,0.7667,0.7399,0.7385,0.7765,0.7421,0.746
+SVM lineal + TF-IDF de palabras y caracteres,0.826,"{""clf__estimator__C"": ""1"", ""vec__caracteres__ngram_range"": ""(2, 4)"", ""vec__palabras__ngram_range"": ""(1, 2)""}",0.8365,0.8371,0.8264,0.8254,0.8376,0.8365,0.8315
+Reglas del Avance 1 (línea base),,,0.6101,0.8044,0.5896,0.6458,0.8204,0.6101,0.6656
+Híbrido: SVM lineal + TF-IDF de palabras y caracteres + crisis por reglas,,,0.8553,0.8602,0.8446,0.8436,0.8603,0.8553,0.8502

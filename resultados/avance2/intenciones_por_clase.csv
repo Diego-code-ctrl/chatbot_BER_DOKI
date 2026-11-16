@@ -1,0 +1,14 @@
+intencion,precision,recall,f1-score,support
+saludo,1.0,0.8333,0.9091,6.0
+despedida,1.0,0.8333,0.9091,6.0
+ayuda_capacidades,0.6667,0.6667,0.6667,6.0
+estres_academico,1.0,0.5714,0.7273,7.0
+ansiedad_examenes,0.8333,0.7143,0.7692,7.0
+sueno,0.625,0.8333,0.7143,6.0
+tecnica_respiracion,0.8571,1.0,0.9231,6.0
+organizacion_tiempo,0.5,0.5714,0.5333,7.0
+solicitar_cita,0.875,1.0,0.9333,7.0
+horarios_ubicacion,0.6667,0.6667,0.6667,6.0
+fuera_de_alcance,0.5714,0.6667,0.6154,6.0
+compartir_imagen,1.0,1.0,1.0,6.0
+crisis,1.0,1.0,1.0,6.0

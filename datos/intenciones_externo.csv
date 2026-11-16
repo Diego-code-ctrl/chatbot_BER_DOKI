@@ -1,0 +1,84 @@
+texto,intencion
+buenas tardes doki,saludo
+"qué onda, ¿cómo vas?",saludo
+"hey, ¿qué tal?",saludo
+saludos doki,saludo
+"buen día, ¿estás?",saludo
+"bueno, ya me voy",despedida
+"gracias, nos vemos otro día",despedida
+"me retiro, gracias",despedida
+"ya está, gracias",despedida
+bye bye,despedida
+¿qué cosas puedes hacer?,ayuda_capacidades
+¿para qué me sirves?,ayuda_capacidades
+¿qué tipo de cosas hablas?,ayuda_capacidades
+qué sabes hacer tú,ayuda_capacidades
+¿eres humano?,ayuda_capacidades
+dime qué ofreces,ayuda_capacidades
+traigo un chorro de tarea,estres_academico
+estoy colapsada con la escuela,estres_academico
+tengo demasiadas entregas esta semana,estres_academico
+la presión de la uni no me deja,estres_academico
+me siento abrumado por los proyectos,estres_academico
+ya no puedo con tantas materias,estres_academico
+tengo examen y me muero de nervios,ansiedad_examenes
+me da mucho miedo el final,ansiedad_examenes
+me pongo fatal cuando presento examenes,ansiedad_examenes
+siento ansiedad por el parcial de mañana,ansiedad_examenes
+se me pone la mente en blanco en los examenes,ansiedad_examenes
+tengo pánico de reprobar el examen,ansiedad_examenes
+no he podido dormir nada,sueno
+me la paso en vela,sueno
+me despierto muchas veces en la noche,sueno
+duermo muy poco,sueno
+¿cómo hago para relajarme?,tecnica_respiracion
+necesito calmarme,tecnica_respiracion
+enséñame a relajarme,tecnica_respiracion
+dame algo para tranquilizarme,tecnica_respiracion
+ejercicio para calmar los nervios,tecnica_respiracion
+quiero respirar para calmarme,tecnica_respiracion
+no sé cómo organizarme,organizacion_tiempo
+necesito organizar mis pendientes,organizacion_tiempo
+quiero aprender a administrar mi tiempo,organizacion_tiempo
+siempre se me junta todo,organizacion_tiempo
+cómo hago un plan semanal,organizacion_tiempo
+me gana la procrastinación,organizacion_tiempo
+quiero ver a un psicólogo,solicitar_cita
+necesito hablar con alguien en persona,solicitar_cita
+¿cómo hago para tener una cita?,solicitar_cita
+quiero agendar con orientación,solicitar_cita
+me gustaría una consulta,solicitar_cita
+quiero hablar con un orientador,solicitar_cita
+¿en dónde atienden?,horarios_ubicacion
+¿qué horario tienen?,horarios_ubicacion
+¿dónde está el servicio de orientación?,horarios_ubicacion
+¿abren en la tarde?,horarios_ubicacion
+¿a qué hora puedo ir?,horarios_ubicacion
+¿cuál es su teléfono?,horarios_ubicacion
+¿qué pastillas me recomiendas?,fuera_de_alcance
+¿me diagnosticas?,fuera_de_alcance
+¿qué medicina tomo para la ansiedad?,fuera_de_alcance
+¿tengo algún trastorno?,fuera_de_alcance
+¿puedo tomar algo para dormir?,fuera_de_alcance
+quiero mandarte mi foto,compartir_imagen
+te comparto mi selfie,compartir_imagen
+¿puedo mostrarte mi cara?,compartir_imagen
+mira esta foto mía,compartir_imagen
+te envío una imagen,compartir_imagen
+analiza mi rostro,compartir_imagen
+ya no quiero vivir más,crisis
+quiero desaparecer de este mundo,crisis
+pienso en suicidarme,crisis
+ya no le encuentro sentido a vivir,crisis
+me siento muy solo últimamente,animo_bajo
+estoy triste por mi ruptura,animo_bajo
+extraño mucho a mis papás,animo_bajo
+tengo problemas con mi familia,animo_bajo
+no tengo ánimo de nada,animo_bajo
+me peleé con mi mejor amigo,animo_bajo
+¿quién va a ganar el mundial?,otro_tema
+dime un dato curioso,otro_tema
+¿cómo se hace el pozole?,otro_tema
+¿qué carro está mejor?,otro_tema
+resuelve esta derivada,otro_tema
+jeje,otro_tema

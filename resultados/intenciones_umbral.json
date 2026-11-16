@@ -1,5 +1,5 @@
 {
-  "modelo": "SVM lineal + TF-IDF",
-  "umbral": 0.35,
-  "porcentaje_prueba_bajo_umbral": 15.9
+  "modelo": "SVM lineal + TF-IDF de palabras y caracteres",
+  "umbral": 0.25,
+  "porcentaje_prueba_bajo_umbral": 2.5
 }

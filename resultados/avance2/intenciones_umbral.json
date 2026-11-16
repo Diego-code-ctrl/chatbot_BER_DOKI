@@ -1,0 +1,5 @@
+{
+  "modelo": "SVM lineal + TF-IDF",
+  "umbral": 0.35,
+  "porcentaje_prueba_bajo_umbral": 15.9
+}
