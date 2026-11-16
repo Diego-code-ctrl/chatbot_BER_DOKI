@@ -1,3 +1,4 @@
+from modelo.config import RESULTADOS, MODELOS
 from pathlib import Path
 from PIL import Image
 import matplotlib
@@ -9,9 +10,8 @@ import pandas as pd
 import hashlib
 import json
 
-import vision as vi
+from modelo.vision import dataset as vi
 
-RESULTADOS = Path(__file__).with_name('resultados')
 MUESTRAS_POR_CLASE = 12
 
 

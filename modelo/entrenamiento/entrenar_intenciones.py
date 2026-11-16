@@ -1,3 +1,4 @@
+from modelo.config import RESULTADOS, MODELOS
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
@@ -16,28 +17,23 @@ import pandas as pd
 import joblib
 import json
 
-import intenciones as it
+from modelo.nlp import chatbot
+from modelo.nlp import intenciones as it
 
-RAIZ = Path(__file__).parent
-RESULTADOS = RAIZ / 'resultados'
-MODELOS = RAIZ / 'modelos'
 
-INTENCIONES = [
-    'saludo', 'despedida', 'ayuda_capacidades', 'estres_academico',
-    'ansiedad_examenes', 'sueno', 'tecnica_respiracion',
-    'organizacion_tiempo', 'solicitar_cita', 'horarios_ubicacion',
-    'fuera_de_alcance', 'compartir_imagen', 'crisis',
-]
+# Las intenciones salen de la base de conocimiento: agregar una no exige tocar este script
+INTENCIONES = [i['nombre'] for i in chatbot.reglas['intenciones']]
 NOMBRES = {
     ('nb', 'tfidf'): 'Naive Bayes + TF-IDF',
     ('nb', 'bow'): 'Naive Bayes + Bag of Words',
     ('svm', 'tfidf'): 'SVM lineal + TF-IDF',
     ('svm', 'bow'): 'SVM lineal + Bag of Words',
+    ('svm', 'mixta'): 'SVM lineal + TF-IDF de palabras y caracteres',
 }
 
 
 def metricas(reales, predichos) -> dict:
-    """Las predicciones fuera de las 13 intenciones (fallback) cuentan como error"""
+    """Las predicciones fuera de las intenciones (fallback) cuentan como error"""
     resultado = {'accuracy': accuracy_score(reales, predichos)}
     for promedio in ('macro', 'weighted'):
         p, r, f, _ = precision_recall_fscore_support(
@@ -111,7 +107,7 @@ def main() -> None:
     )
     por_clase.round(4).to_csv(RESULTADOS / 'intenciones_por_clase.csv', index=False)
 
-    # Matriz de confusión 13 x 13
+    # Matriz de confusión
     matriz = confusion_matrix(y_test, modelo.predict(x_test), labels=INTENCIONES)
     plt.figure(figsize=(11, 9))
     sns.heatmap(matriz, annot=True, fmt='d', cmap='Blues',

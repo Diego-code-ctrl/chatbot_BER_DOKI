@@ -75,10 +75,20 @@ def tokenizar_y_stem(texto: str | None) -> tuple[list[str], list[str]]:
     return tokens, aplicar_stemming(tokens)
 
 
+def reducir_repeticiones(texto: str) -> str:
+    """«holaaa» → «hola», «siii» → «si». Ninguna palabra del español repite una letra tres veces"""
+    return re.sub(r'(\w)\1{2,}', r'\1', texto)
+
+
+def normalizar_para_caracteres(texto: str | None) -> str:
+    """Entrada de los n-gramas de caracteres: texto normalizado y sin letras alargadas"""
+    return reducir_repeticiones(normalizar_texto(texto))
+
+
 def preprocesar(texto: str | None) -> list[str]:
     """
     Pipeline completo para el clasificador de intenciones: normalización,
     tokenización, eliminación de stopwords y stemming. Se aplica igual a los
     ejemplos de entrenamiento y a los mensajes en uso
     """
-    return aplicar_stemming(quitar_stopwords(tokenizar(texto)))
+    return aplicar_stemming(quitar_stopwords(tokenizar(normalizar_para_caracteres(texto))))

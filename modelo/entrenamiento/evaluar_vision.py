@@ -1,3 +1,4 @@
+from modelo.config import RESULTADOS, MODELOS
 from torch.utils.data import DataLoader
 from pathlib import Path
 from PIL import Image
@@ -12,13 +13,10 @@ import numpy as np
 import torch
 import json
 
-import evaluacion_vision as ev
-import modelo_vision as mv
-import vision as vi
+from modelo.vision import evaluacion as ev
+from modelo.vision import arquitectura as mv
+from modelo.vision import dataset as vi
 
-RAIZ = Path(__file__).parent
-RESULTADOS = RAIZ / 'resultados'
-MODELOS = RAIZ / 'modelos'
 
 NOMBRES = {
     'efficientnet_b0': 'EfficientNet-B0',

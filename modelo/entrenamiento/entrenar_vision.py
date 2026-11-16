@@ -1,3 +1,4 @@
+from modelo.config import RESULTADOS, MODELOS
 from torch.utils.data import DataLoader
 from pathlib import Path
 import argparse
@@ -8,12 +9,9 @@ import time
 import torch
 import torchvision
 
-import modelo_vision as mv
-import vision as vi
+from modelo.vision import arquitectura as mv
+from modelo.vision import dataset as vi
 
-RAIZ = Path(__file__).parent
-RESULTADOS = RAIZ / 'resultados'
-MODELOS = RAIZ / 'modelos'
 
 
 def crear_cargadores(df, lote: int, trabajadores: int) -> dict[str, DataLoader]:

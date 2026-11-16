@@ -2,15 +2,16 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.pipeline import Pipeline
+from sklearn.pipeline import FeatureUnion, Pipeline
 from sklearn.svm import LinearSVC
-from preprocesamiento import preprocesar
+from modelo.nlp.preprocesamiento import normalizar_para_caracteres, preprocesar
 from pathlib import Path
+from modelo.config import DATOS
 import numpy as np
 import pandas as pd
-import chatbot
+from modelo.nlp import chatbot
 
-RUTA_DATASET = Path(__file__).with_name('datos') / 'intenciones.csv'
+RUTA_DATASET = DATOS / 'intenciones.csv'
 SEMILLA = 42
 
 
@@ -54,6 +55,16 @@ def crear_vectorizador(
 
     if tipo == 'tfidf':
         return TfidfVectorizer(sublinear_tf=True, norm='l2', **parametros)
+    if tipo == 'mixta':
+        # Palabras (con el mismo preprocesamiento) + n-gramas de caracteres dentro de cada palabra.
+        # Los caracteres toleran faltas de ortografía y variantes («estresadisimo», «organizarme»)
+        return FeatureUnion([
+            ('palabras', TfidfVectorizer(sublinear_tf=True, norm='l2', **parametros)),
+            ('caracteres', TfidfVectorizer(
+                analyzer='char_wb', ngram_range=(2, 5), preprocessor=normalizar_para_caracteres,
+                lowercase=False, sublinear_tf=True, norm='l2', min_df=2,
+            )),
+        ])
     if tipo == 'bow':
         return CountVectorizer(**parametros)
 
@@ -91,12 +102,18 @@ def crear_pipeline(algoritmo: str, representacion: str = 'tfidf') -> Pipeline:
     ])
 
 
-def __rejilla(algoritmo: str) -> dict:
+def __rejilla(algoritmo: str, representacion: str = 'tfidf') -> dict:
     hiperparametro = (
         {'clf__alpha': [0.1, 0.3, 0.5, 1.0]}
         if algoritmo == 'nb'
         else {'clf__estimator__C': [0.1, 1, 10]}
     )
+    if representacion == 'mixta':
+        return {
+            'vec__palabras__ngram_range': [(1, 1), (1, 2)],
+            'vec__caracteres__ngram_range': [(2, 4), (3, 5)],
+            **hiperparametro,
+        }
     # El tamaño del vocabulario y los bigramas se ajustan con validación cruzada
     return {
         'vec__ngram_range': [(1, 1), (1, 2)],
@@ -114,7 +131,7 @@ def buscar_hiperparametros(
     """Validación cruzada estratificada de 5 particiones, solo sobre entrenamiento"""
     busqueda = GridSearchCV(
         crear_pipeline(algoritmo, representacion),
-        __rejilla(algoritmo),
+        __rejilla(algoritmo, representacion),
         scoring='f1_macro',
         cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=SEMILLA),
     )

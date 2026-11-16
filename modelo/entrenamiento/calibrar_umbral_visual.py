@@ -1,3 +1,4 @@
+from modelo.config import RESULTADOS, MODELOS
 from torch.utils.data import DataLoader
 from pathlib import Path
 import pandas as pd
@@ -5,12 +6,11 @@ import numpy as np
 import argparse
 import json
 
-from evaluar_vision import cargar_modelo
-import intenciones as it
-import modelo_vision as mv
-import vision as vi
+from modelo.entrenamiento.evaluar_vision import cargar_modelo
+from modelo.nlp import intenciones as it
+from modelo.vision import arquitectura as mv
+from modelo.vision import dataset as vi
 
-RESULTADOS = Path(__file__).parent / 'resultados'
 
 
 def main() -> None:
