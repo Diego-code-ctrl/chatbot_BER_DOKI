@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 /archive
+.streamlit/secrets.toml
+.env
+logs/

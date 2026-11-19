@@ -2,12 +2,13 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import Dataset
 from torchvision import transforms
 from pathlib import Path
+from modelo.config import IMAGENES_FER
 from PIL import Image
 import pandas as pd
 import hashlib
 import torch
 
-RAIZ_DATOS = Path(__file__).with_name('archive')
+RAIZ_DATOS = IMAGENES_FER
 SEMILLA = 42
 TAMANO = 224
 
