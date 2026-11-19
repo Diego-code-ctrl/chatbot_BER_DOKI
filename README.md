@@ -13,7 +13,6 @@ chatbot_BER_DOKI/
 │   ├── vision/         dataset FER-2013, arquitectura, inferencia y evaluación
 │   ├── conocimiento/   reglas.json: respuestas, textos y parámetros del agente (versionado)
 │   └── entrenamiento/  scripts de entrenamiento, evaluación y calibración
-├── tests/          pruebas automáticas (casos de la sección 9)
 ├── datos/  modelos/  resultados/
 ├── requirements.txt        interfaz (lo lee Streamlit Community Cloud)
 ├── requirements-api.txt    API y modelos (equipo local)
