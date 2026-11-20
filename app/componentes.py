@@ -7,7 +7,7 @@ import time
 import streamlit as st
 
 from cliente_api import ErrorApi
-from config import PAUSA_PALABRA, PAUSA_PUNTUACION, EMERGENCIAS, LINEA_DE_LA_VIDA, RESPUESTAS_OFERTA, TEMAS_RAPIDOS
+from config import MAX_BYTES_IMAGEN, MAX_CARACTERES, PAUSA_PALABRA, PAUSA_PUNTUACION, EMERGENCIAS, LINEA_DE_LA_VIDA, RESPUESTAS_OFERTA, TEMAS_RAPIDOS
 from cliente_api import Imagen
 
 
@@ -179,6 +179,29 @@ def dialogo_consentimiento(texto: str, archivo) -> None:
         st.rerun()
     if st.button('Enviar sin la imagen', use_container_width=True):
         st.session_state.envio_listo = {'texto': texto, 'imagen': None, 'consentimiento': False}
+        st.rerun()
+
+
+@st.dialog('Tomar una foto')
+def dialogo_camara() -> None:
+    """Cámara del equipo, con el mismo consentimiento explícito que una imagen adjunta"""
+    foto = st.camera_input('Cámara', label_visibility='collapsed')
+    texto = st.text_input('Mensaje (opcional)', max_chars=MAX_CARACTERES, placeholder='¿Quieres contarme algo?')
+    st.markdown(
+        'DOKi puede comentar tu **expresión aparente**. La foto se analiza solo ahora, '
+        'no se guarda y es solo una hipótesis: tú sabes cómo te sientes.'
+    )
+    if st.button('Autorizar y enviar', type='primary', use_container_width=True, disabled=foto is None):
+        if foto.size > MAX_BYTES_IMAGEN:
+            st.warning('La foto supera los 5 MB. Inténtalo de nuevo.')
+            return
+        st.session_state.envio_listo = {
+            'texto': texto.strip() or 'Te comparto una foto',
+            'imagen': Imagen(foto.getvalue(), 'camara.jpg', foto.type or 'image/jpeg'),
+            'consentimiento': True,
+        }
+        st.rerun()
+    if st.button('Cancelar', use_container_width=True):
         st.rerun()
 
 

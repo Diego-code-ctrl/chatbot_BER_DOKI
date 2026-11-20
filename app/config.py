@@ -9,6 +9,8 @@ MAX_BYTES_IMAGEN = 5 * 1024 * 1024
 FORMATOS_IMAGEN = ('image/jpeg', 'image/png')
 TIMEOUT_CONEXION = 5
 TIMEOUT_RESPUESTA = 30
+# Si la respuesta tarda más que esto (segundos), se avisa con claridad en lugar de solo girar un indicador
+AVISO_ESPERA = 6
 
 # Ritmo de la escritura progresiva (segundos): ~8 palabras por segundo, con pausa leve tras la puntuación
 PAUSA_PALABRA = 0.11

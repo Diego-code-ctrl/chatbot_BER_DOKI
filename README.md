@@ -13,6 +13,9 @@ chatbot_BER_DOKI/
 │   ├── vision/         dataset FER-2013, arquitectura, inferencia y evaluación
 │   ├── conocimiento/   reglas.json: respuestas, textos y parámetros del agente (versionado)
 │   └── entrenamiento/  scripts de entrenamiento, evaluación y calibración
+├── tests/          pruebas automáticas (casos de la sección 9)
+├── scripts/        casos de la sección 9 con resultados observados y mediciones de desempeño
+├── docs/           arquitectura, API, despliegue, fichas de modelos, ética, pruebas, cambios
 ├── datos/  modelos/  resultados/
 ├── requirements.txt        interfaz (lo lee Streamlit Community Cloud)
 ├── requirements-api.txt    API y modelos (equipo local)
@@ -124,6 +127,10 @@ Errores: `{"error": {"codigo", "mensaje", "id_solicitud"}}` con 400, 401, 413, 4
 
 ## Interfaz
 
+La imagen se adjunta con el clip del campo de chat o con **Tomar foto** (cámara de la computadora);
+en ambos casos se pide el consentimiento en un cuadro aparte. Si la respuesta tarda más de 6 s,
+la interfaz lo dice con claridad en lugar de solo mostrar un indicador.
+
 Si la API no responde y el mensaje parece de crisis (`app/crisis_local.py`), la interfaz muestra
 el protocolo de ayuda por sí misma antes del aviso de error.
 
@@ -134,3 +141,21 @@ python -m modelo.entrenamiento.entrenar_intenciones
 python -m modelo.entrenamiento.entrenar_vision
 python -m modelo.entrenamiento.evaluar_vision
 ```
+
+## Pruebas y mediciones
+
+```bash
+pytest                                # 58 pruebas (+1 limitación conocida): API (A1–A9), agente (G1–G10), degradación (E1–E4), privacidad
+python -m scripts.ejecutar_casos      # casos de la sección 9 con lo observado → resultados/casos_prueba.csv (23/23)
+python -m scripts.medir_desempeno     # latencia, memoria y carga en local → resultados/desempeno_local.*
+```
+
+En local, un turno de texto tarda ≈ 4 ms en la API y uno con imagen ≈ 120 ms; detalles en [docs/pruebas.md](docs/pruebas.md).
+
+## Despliegue
+
+Interfaz en Streamlit Community Cloud (archivo principal `app/main.py`, Python 3.12, *Secrets*:
+`API_URL` y `API_KEY`), API en el equipo local y un Cloudflare Quick Tunnel entre ambas. Costo: $0.
+Pasos completos y solución de problemas en [docs/despliegue.md](docs/despliegue.md).
+
+Aplicación: *(dirección pendiente tras el despliegue)* · Documentación técnica: [docs/](docs/README.md)

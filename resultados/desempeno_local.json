@@ -1,0 +1,44 @@
+{
+  "equipo": {
+    "sistema": "Darwin arm64",
+    "python": "3.14.6",
+    "procesador": "arm",
+    "nucleos": 8
+  },
+  "versiones": {
+    "conocimiento": "2.2.0",
+    "imagen": "efficientnet_b0@fb18d9ad",
+    "texto": "svm-tfidf@969e110d"
+  },
+  "arranque_hasta_salud_s": 4.54,
+  "primera_solicitud_texto_ms": 52.0,
+  "primera_solicitud_imagen_ms": 161.7,
+  "texto": {
+    "n": 100,
+    "mediana_ms": 4.4,
+    "p95_ms": 4.9,
+    "max_ms": 6.4
+  },
+  "imagen": {
+    "n": 40,
+    "mediana_ms": 118.1,
+    "p95_ms": 126.4,
+    "max_ms": 158.5
+  },
+  "memoria_mb": {
+    "tras_arranque": 548.9,
+    "tras_imagenes": 542.4,
+    "tras_carga": 542.6
+  },
+  "carga": {
+    "hilos": 8,
+    "solicitudes": 200,
+    "exitosas": 200,
+    "errores": 0,
+    "solicitudes_por_segundo": 257.7,
+    "n": 200,
+    "mediana_ms": 30.7,
+    "p95_ms": 34.8,
+    "max_ms": 38.7
+  }
+}

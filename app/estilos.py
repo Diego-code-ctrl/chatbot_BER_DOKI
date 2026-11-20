@@ -72,6 +72,14 @@ footer, #MainMenu { visibility: hidden; }
 .st-key-aviso [data-testid="stExpander"] summary { justify-content: center; font-size: .88rem; }
 @media (max-width: 560px) { .doki-puntos { grid-template-columns: 1fr; } }
 
+/* Espera: indicador discreto; si tarda, el aviso se vuelve explícito */
+.doki-espera { color: var(--suave); font-size: .95rem; padding: .2rem 0; animation: doki-latido 1.4s ease-in-out infinite; }
+.doki-espera-lenta { animation: none; color: var(--tinta); background: var(--acento-claro); border-radius: 14px; padding: .7rem 1rem; }
+@keyframes doki-latido { 50% { opacity: .45; } }
+@media (prefers-reduced-motion: reduce) { .doki-espera { animation: none; } }
+.st-key-acciones { gap: .4rem; }
+.st-key-acciones .stButton > button { padding: .3rem .85rem; min-height: 0; font-size: .88rem; }
+
 /* Respuestas rápidas: píldoras compactas que se acomodan en varias líneas */
 .st-key-rapidas { flex-wrap: wrap; gap: .45rem; }
 .st-key-rapidas .stButton > button { padding: .3rem .9rem; min-height: 0; font-size: .9rem; background: rgba(255,255,255,.85); }

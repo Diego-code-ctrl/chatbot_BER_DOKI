@@ -1,0 +1,24 @@
+caso,resultado_obtenido,cumple
+A1,"200; estado=listo; versiones={'conocimiento': '2.2.0', 'imagen': 'efficientnet_b0@fb18d9ad', 'texto': 'svm-tfidf@969e110d'}",Sí
+A2,200; intención=estres_academico; confianza=0.86,Sí
+A3,400; código=TEXTO_INVALIDO,Sí
+A4,400; código=TEXTO_MUY_LARGO,Sí
+A5,200; expresión=tristeza; confianza=0.26; supera_umbral=False,Sí
+A6,413; código=IMAGEN_MUY_GRANDE,Sí
+A7,texto disfrazado: 415; GIF: 415; código=FORMATO_NO_ADMITIDO,Sí
+A8,401; código=NO_AUTORIZADO; mensaje=«Servicio no disponible.»,Sí
+A9,"22 solicitudes de una sesión: 200 hasta la 20.ª, 429 desde la 21.ª (límite 20/min); otra sesión al mismo tiempo: 200",Sí
+G1,acción=responder; intención=saludo (0.88),Sí
+G2,acción=crisis; segmentos=['crisis']; incluye 911 y línea de contacto: True,Sí
+G3,acción=crisis; modelo visual llamado 0 veces; expresión en la respuesta=None,Sí
+G4,"acción=responder; expresión=tristeza (0.9); frase=«Me parece ver una expresión triste o cansada, aunque puedo equivocarme. ¿Quieres contarme cómo te sientes?»",Sí
+G5,acción=responder; modelo visual llamado 0 veces; expresión=None,Sí
+G6,acción=aclaracion; confianza=0.1118,Sí
+G7,"intención=estres_academico; expresión=alegría; frase=«En tu imagen me parece ver una expresión de alegría, pero lo que me escribes cuenta más que una foto, así que sigo con lo que me cuentas.»",Sí
+G8,acción=pausa,Sí
+G9,"4 turnos: 4 respuestas distintas; ofertas de cita en la conversación: 1; memoria=['estres_academico', 'ansiedad_examenes', 'estres_academico', 'estres_academico']",Sí
+G10,«¿quién ganó el partido?» → responder/otro_tema; «recomiéndame una película» → responder/otro_tema,Sí
+E1,aviso «no está disponible»: True; botón Reintentar: True; banner presente: True,Sí
+E2,"acción=responder; segmentos=['texto', 'imagen']; aviso=«No pude analizar la imagen en este momento, así que continúo solo con lo que me escribes.»",Sí
+E3,crisis por reglas: crisis; mensaje común: error_modelo con Línea de la Vida: True; /salud: 503,Sí
+E4,aviso «no está disponible»: True; muestra 401 o código técnico: False,Sí

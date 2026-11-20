@@ -1,0 +1,6 @@
+medicion,condicion,resultado
+"Latencia de texto en la API","Solo texto, en local","mediana 4.4 ms; p95 4.9 ms (n=100)"
+"Latencia de imagen en la API","Texto e imagen, en local","mediana 118.1 ms; p95 126.4 ms (n=40)"
+"Primera solicitud tras iniciar la API","Con la carga de modelos","arranque 4.54 s; primer texto 52.0 ms; primera imagen 161.7 ms"
+"Memoria de la API con los modelos cargados","Equipo local","548.9 MB al arrancar; 542.4 MB tras usar el modelo visual; 542.6 MB tras la carga"
+"Varias solicitudes simultáneas","Prueba de carga corta","8 sesiones, 200 solicitudes: 200 correctas, 257.7 solicitudes/s, mediana 30.7 ms, p95 34.8 ms"

@@ -1,5 +1,8 @@
 """Interfaz Streamlit de DOKi. Arranque: streamlit run app/main.py
 No contiene modelos ni decide nada sobre el contenido de las respuestas: captura, valida, llama a la API y muestra."""
+import time
+from concurrent.futures import ThreadPoolExecutor
+
 import streamlit as st
 
 import componentes as ui
@@ -8,7 +11,7 @@ import estado
 import estilos
 from cliente_api import ClienteApi, ErrorApi
 from cliente_demo import ClienteDemo
-from config import FORMATOS_IMAGEN, MAX_BYTES_IMAGEN, MAX_CARACTERES, cargar_ajustes
+from config import AVISO_ESPERA, FORMATOS_IMAGEN, MAX_BYTES_IMAGEN, MAX_CARACTERES, cargar_ajustes
 
 st.set_page_config(page_title='DOKi', page_icon='💬', layout='centered', initial_sidebar_state='collapsed')
 estilos.aplicar()
@@ -28,13 +31,38 @@ def cliente():
     return ClienteDemo() if ajustes.modo_demo else ClienteApi(ajustes.api_url, ajustes.api_key, st.session_state.id_sesion)
 
 
+_hilos = ThreadPoolExecutor(max_workers=4)
+
+
+def esperar_respuesta(envio: dict) -> dict:
+    """
+    Llama a la API en un hilo para poder avisar si tarda: primero «escribiendo…» y, pasados
+    AVISO_ESPERA segundos, un mensaje claro de que la respuesta va lenta (sección 6). La propia
+    llamada tiene su tiempo máximo; aquí solo se informa mientras se espera.
+    """
+    c = cliente()  # se crea en el hilo principal: lee la sesión de Streamlit
+    futuro = _hilos.submit(c.chat, envio['texto'], st.session_state.estado_agente, envio['imagen'], envio['consentimiento'])
+    aviso, inicio, lento = st.empty(), time.monotonic(), False
+    aviso.markdown('<div class="doki-espera">DOKi está escribiendo…</div>', unsafe_allow_html=True)
+    while not futuro.done():
+        if not lento and time.monotonic() - inicio > AVISO_ESPERA:
+            lento = True
+            aviso.markdown(
+                '<div class="doki-espera doki-espera-lenta" role="status">Esto está tardando más de lo normal; '
+                'sigo intentándolo. Si necesitas ayuda ahora, usa los números de arriba.</div>',
+                unsafe_allow_html=True,
+            )
+        time.sleep(0.2)
+    aviso.empty()
+    return futuro.result()  # propaga ErrorApi
+
+
 def turno(envio: dict) -> None:
     """Ejecuta un turno y agrega la respuesta (o un error controlado) al historial. No reintenta solo."""
     st.session_state.ultimo_envio = envio
     try:
         with st.chat_message('assistant'):
-            with st.spinner('DOKi está escribiendo…'):
-                r = cliente().chat(envio['texto'], st.session_state.estado_agente, envio['imagen'], envio['consentimiento'])
+            r = esperar_respuesta(envio)
             ui.mostrar_segmentos(r['respuesta'], animar=True)  # escritura progresiva
         st.session_state.estado_agente = r.get('estado', {})
         st.session_state.mensajes.append({'rol': 'assistant', 'segmentos': r['respuesta']})
@@ -55,11 +83,15 @@ if not st.session_state.aviso_aceptado:
     st.stop()
 
 # --- Cabecera y controles
-izq, der = st.columns([3, 2], vertical_alignment='center')
+izq, der = st.columns([2, 3], vertical_alignment='center')
 izq.markdown('<div class="doki-marca">DOKi</div>', unsafe_allow_html=True)
-if der.button('Borrar conversación'):
-    estado.borrar_conversacion()
-    st.rerun()
+with der.container(horizontal=True, horizontal_alignment='right', key='acciones'):
+    # En el celular el clip del chat ya ofrece la cámara; en computadora, este botón la abre
+    if st.button('Tomar foto', icon=':material/photo_camera:', help='Compartir una foto tomada con la cámara (opcional)'):
+        ui.dialogo_camara()
+    if st.button('Borrar conversación'):
+        estado.borrar_conversacion()
+        st.rerun()
 
 with st.sidebar:
     ui.panel_analisis(st.session_state.meta_ultimo)
